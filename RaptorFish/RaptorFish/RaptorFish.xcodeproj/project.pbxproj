@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B06AA61B1BD9D73B00886328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA61A1BD9D73B00886328 /* AppDelegate.swift */; };
+		B06AA61D1BD9D73B00886328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA61C1BD9D73B00886328 /* ViewController.swift */; };
+		B06AA6201BD9D73B00886328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B06AA61E1BD9D73B00886328 /* Main.storyboard */; };
+		B06AA6221BD9D73B00886328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B06AA6211BD9D73B00886328 /* Assets.xcassets */; };
+		B06AA6251BD9D73B00886328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B06AA6231BD9D73B00886328 /* LaunchScreen.storyboard */; };
+		B06AA6301BD9D73B00886328 /* RaptorFishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA62F1BD9D73B00886328 /* RaptorFishTests.swift */; };
+		B06AA63B1BD9D73B00886328 /* RaptorFishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA63A1BD9D73B00886328 /* RaptorFishUITests.swift */; };
+		B06AA6491BD9D8AC00886328 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA6481BD9D8AC00886328 /* HomeViewController.swift */; };
+		B06AA64B1BD9E10400886328 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA64A1BD9E10400886328 /* CreateTaskViewController.swift */; };
+		B06AA64D1BD9E11000886328 /* CreateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA64C1BD9E11000886328 /* CreateListViewController.swift */; };
+		B06AA64F1BD9E12100886328 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA64E1BD9E12100886328 /* TemplateViewController.swift */; };
+		B06AA6511BD9E16F00886328 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA6501BD9E16F00886328 /* ActivityViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B06AA62C1BD9D73B00886328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B06AA60F1BD9D73B00886328 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B06AA6161BD9D73B00886328;
+			remoteInfo = RaptorFish;
+		};
+		B06AA6371BD9D73B00886328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B06AA60F1BD9D73B00886328 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B06AA6161BD9D73B00886328;
+			remoteInfo = RaptorFish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B06AA6171BD9D73B00886328 /* RaptorFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaptorFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06AA61A1BD9D73B00886328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B06AA61C1BD9D73B00886328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B06AA61F1BD9D73B00886328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B06AA6211BD9D73B00886328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B06AA6241BD9D73B00886328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B06AA6261BD9D73B00886328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B06AA62B1BD9D73B00886328 /* RaptorFishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaptorFishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06AA62F1BD9D73B00886328 /* RaptorFishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaptorFishTests.swift; sourceTree = "<group>"; };
+		B06AA6311BD9D73B00886328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B06AA6361BD9D73B00886328 /* RaptorFishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaptorFishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06AA63A1BD9D73B00886328 /* RaptorFishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaptorFishUITests.swift; sourceTree = "<group>"; };
+		B06AA63C1BD9D73B00886328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B06AA6481BD9D8AC00886328 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B06AA64A1BD9E10400886328 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
+		B06AA64C1BD9E11000886328 /* CreateListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateListViewController.swift; sourceTree = "<group>"; };
+		B06AA64E1BD9E12100886328 /* TemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
+		B06AA6501BD9E16F00886328 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B06AA6141BD9D73B00886328 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06AA6281BD9D73B00886328 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06AA6331BD9D73B00886328 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B06AA60E1BD9D73B00886328 = {
+			isa = PBXGroup;
+			children = (
+				B06AA6191BD9D73B00886328 /* RaptorFish */,
+				B06AA62E1BD9D73B00886328 /* RaptorFishTests */,
+				B06AA6391BD9D73B00886328 /* RaptorFishUITests */,
+				B06AA6181BD9D73B00886328 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B06AA6181BD9D73B00886328 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B06AA6171BD9D73B00886328 /* RaptorFish.app */,
+				B06AA62B1BD9D73B00886328 /* RaptorFishTests.xctest */,
+				B06AA6361BD9D73B00886328 /* RaptorFishUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B06AA6191BD9D73B00886328 /* RaptorFish */ = {
+			isa = PBXGroup;
+			children = (
+				B06AA61A1BD9D73B00886328 /* AppDelegate.swift */,
+				B06AA61C1BD9D73B00886328 /* ViewController.swift */,
+				B06AA61E1BD9D73B00886328 /* Main.storyboard */,
+				B06AA6481BD9D8AC00886328 /* HomeViewController.swift */,
+				B06AA64A1BD9E10400886328 /* CreateTaskViewController.swift */,
+				B06AA64C1BD9E11000886328 /* CreateListViewController.swift */,
+				B06AA64E1BD9E12100886328 /* TemplateViewController.swift */,
+				B06AA6501BD9E16F00886328 /* ActivityViewController.swift */,
+				B06AA6211BD9D73B00886328 /* Assets.xcassets */,
+				B06AA6231BD9D73B00886328 /* LaunchScreen.storyboard */,
+				B06AA6261BD9D73B00886328 /* Info.plist */,
+			);
+			path = RaptorFish;
+			sourceTree = "<group>";
+		};
+		B06AA62E1BD9D73B00886328 /* RaptorFishTests */ = {
+			isa = PBXGroup;
+			children = (
+				B06AA62F1BD9D73B00886328 /* RaptorFishTests.swift */,
+				B06AA6311BD9D73B00886328 /* Info.plist */,
+			);
+			path = RaptorFishTests;
+			sourceTree = "<group>";
+		};
+		B06AA6391BD9D73B00886328 /* RaptorFishUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B06AA63A1BD9D73B00886328 /* RaptorFishUITests.swift */,
+				B06AA63C1BD9D73B00886328 /* Info.plist */,
+			);
+			path = RaptorFishUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B06AA6161BD9D73B00886328 /* RaptorFish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B06AA63F1BD9D73B00886328 /* Build configuration list for PBXNativeTarget "RaptorFish" */;
+			buildPhases = (
+				B06AA6131BD9D73B00886328 /* Sources */,
+				B06AA6141BD9D73B00886328 /* Frameworks */,
+				B06AA6151BD9D73B00886328 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaptorFish;
+			productName = RaptorFish;
+			productReference = B06AA6171BD9D73B00886328 /* RaptorFish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B06AA62A1BD9D73B00886328 /* RaptorFishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B06AA6421BD9D73B00886328 /* Build configuration list for PBXNativeTarget "RaptorFishTests" */;
+			buildPhases = (
+				B06AA6271BD9D73B00886328 /* Sources */,
+				B06AA6281BD9D73B00886328 /* Frameworks */,
+				B06AA6291BD9D73B00886328 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B06AA62D1BD9D73B00886328 /* PBXTargetDependency */,
+			);
+			name = RaptorFishTests;
+			productName = RaptorFishTests;
+			productReference = B06AA62B1BD9D73B00886328 /* RaptorFishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B06AA6351BD9D73B00886328 /* RaptorFishUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B06AA6451BD9D73B00886328 /* Build configuration list for PBXNativeTarget "RaptorFishUITests" */;
+			buildPhases = (
+				B06AA6321BD9D73B00886328 /* Sources */,
+				B06AA6331BD9D73B00886328 /* Frameworks */,
+				B06AA6341BD9D73B00886328 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B06AA6381BD9D73B00886328 /* PBXTargetDependency */,
+			);
+			name = RaptorFishUITests;
+			productName = RaptorFishUITests;
+			productReference = B06AA6361BD9D73B00886328 /* RaptorFishUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B06AA60F1BD9D73B00886328 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Sean Smith";
+				TargetAttributes = {
+					B06AA6161BD9D73B00886328 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					B06AA62A1BD9D73B00886328 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = B06AA6161BD9D73B00886328;
+					};
+					B06AA6351BD9D73B00886328 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = B06AA6161BD9D73B00886328;
+					};
+				};
+			};
+			buildConfigurationList = B06AA6121BD9D73B00886328 /* Build configuration list for PBXProject "RaptorFish" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B06AA60E1BD9D73B00886328;
+			productRefGroup = B06AA6181BD9D73B00886328 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B06AA6161BD9D73B00886328 /* RaptorFish */,
+				B06AA62A1BD9D73B00886328 /* RaptorFishTests */,
+				B06AA6351BD9D73B00886328 /* RaptorFishUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B06AA6151BD9D73B00886328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06AA6251BD9D73B00886328 /* LaunchScreen.storyboard in Resources */,
+				B06AA6221BD9D73B00886328 /* Assets.xcassets in Resources */,
+				B06AA6201BD9D73B00886328 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06AA6291BD9D73B00886328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06AA6341BD9D73B00886328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B06AA6131BD9D73B00886328 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06AA61D1BD9D73B00886328 /* ViewController.swift in Sources */,
+				B06AA61B1BD9D73B00886328 /* AppDelegate.swift in Sources */,
+				B06AA64F1BD9E12100886328 /* TemplateViewController.swift in Sources */,
+				B06AA64D1BD9E11000886328 /* CreateListViewController.swift in Sources */,
+				B06AA6511BD9E16F00886328 /* ActivityViewController.swift in Sources */,
+				B06AA6491BD9D8AC00886328 /* HomeViewController.swift in Sources */,
+				B06AA64B1BD9E10400886328 /* CreateTaskViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06AA6271BD9D73B00886328 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06AA6301BD9D73B00886328 /* RaptorFishTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06AA6321BD9D73B00886328 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06AA63B1BD9D73B00886328 /* RaptorFishUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B06AA62D1BD9D73B00886328 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B06AA6161BD9D73B00886328 /* RaptorFish */;
+			targetProxy = B06AA62C1BD9D73B00886328 /* PBXContainerItemProxy */;
+		};
+		B06AA6381BD9D73B00886328 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B06AA6161BD9D73B00886328 /* RaptorFish */;
+			targetProxy = B06AA6371BD9D73B00886328 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B06AA61E1BD9D73B00886328 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B06AA61F1BD9D73B00886328 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B06AA6231BD9D73B00886328 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B06AA6241BD9D73B00886328 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B06AA63D1BD9D73B00886328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B06AA63E1BD9D73B00886328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B06AA6401BD9D73B00886328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RaptorFish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = seanston.RaptorFish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B06AA6411BD9D73B00886328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RaptorFish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = seanston.RaptorFish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B06AA6431BD9D73B00886328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RaptorFishTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = seanston.RaptorFishTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaptorFish.app/RaptorFish";
+			};
+			name = Debug;
+		};
+		B06AA6441BD9D73B00886328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RaptorFishTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = seanston.RaptorFishTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaptorFish.app/RaptorFish";
+			};
+			name = Release;
+		};
+		B06AA6461BD9D73B00886328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RaptorFishUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = seanston.RaptorFishUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RaptorFish;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B06AA6471BD9D73B00886328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RaptorFishUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = seanston.RaptorFishUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RaptorFish;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B06AA6121BD9D73B00886328 /* Build configuration list for PBXProject "RaptorFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B06AA63D1BD9D73B00886328 /* Debug */,
+				B06AA63E1BD9D73B00886328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B06AA63F1BD9D73B00886328 /* Build configuration list for PBXNativeTarget "RaptorFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B06AA6401BD9D73B00886328 /* Debug */,
+				B06AA6411BD9D73B00886328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B06AA6421BD9D73B00886328 /* Build configuration list for PBXNativeTarget "RaptorFishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B06AA6431BD9D73B00886328 /* Debug */,
+				B06AA6441BD9D73B00886328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B06AA6451BD9D73B00886328 /* Build configuration list for PBXNativeTarget "RaptorFishUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B06AA6461BD9D73B00886328 /* Debug */,
+				B06AA6471BD9D73B00886328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B06AA60F1BD9D73B00886328 /* Project object */;
+}
