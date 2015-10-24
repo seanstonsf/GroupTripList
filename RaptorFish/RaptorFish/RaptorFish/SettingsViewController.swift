@@ -1,23 +1,22 @@
 //
-//  ActivityViewController.swift
+//  SettingsViewController.swift
 //  RaptorFish
 //
-//  Created by Sean Smith on 10/22/15.
+//  Created by Sean Smith on 10/24/15.
 //  Copyright © 2015 Sean Smith. All rights reserved.
 //
 
 import UIKit
 
-class ActivityViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
-    @IBOutlet weak var activityScrollView: UIScrollView!
-    @IBOutlet weak var activityImageView: UIImageView!
-    @IBOutlet weak var actvityCloseButton: UIButton!
-
+    @IBOutlet weak var settingScrollView: UIScrollView!
+    @IBOutlet weak var setttingsImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        activityScrollView.contentSize.height = activityImageView.frame.height + 10
+        settingScrollView.contentSize.height = setttingsImageView.frame.height + 10
         // Do any additional setup after loading the view.
     }
 
@@ -37,7 +36,9 @@ class ActivityViewController: UIViewController {
     }
     */
 
-    @IBAction func ActivityCloseButtonPress(sender: AnyObject) {
+    @IBAction func backButtonPress(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
+//        navigationController?.popViewControllerAnimated(true)
+
     }
 }

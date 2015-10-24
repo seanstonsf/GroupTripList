@@ -1,23 +1,23 @@
 //
-//  ActivityViewController.swift
+//  ProfileViewController.swift
 //  RaptorFish
 //
-//  Created by Sean Smith on 10/22/15.
+//  Created by Sean Smith on 10/24/15.
 //  Copyright © 2015 Sean Smith. All rights reserved.
 //
 
 import UIKit
 
-class ActivityViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
-    @IBOutlet weak var activityScrollView: UIScrollView!
-    @IBOutlet weak var activityImageView: UIImageView!
-    @IBOutlet weak var actvityCloseButton: UIButton!
-
+    @IBOutlet weak var closeButton: UIButton!
+//    @IBOutlet weak var settingsNavigationButton: UIButton!
+    @IBOutlet weak var profileScrollView: UIScrollView!
+    @IBOutlet weak var profileImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        activityScrollView.contentSize.height = activityImageView.frame.height + 10
+        profileScrollView.contentSize.height = profileImageView.frame.height + 10
         // Do any additional setup after loading the view.
     }
 
@@ -37,7 +37,7 @@ class ActivityViewController: UIViewController {
     }
     */
 
-    @IBAction func ActivityCloseButtonPress(sender: AnyObject) {
+    @IBAction func CloseButtonPress(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
 }
