@@ -37,8 +37,9 @@ class SettingsViewController: UIViewController {
     */
 
     @IBAction func backButtonPress(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-//        navigationController?.popViewControllerAnimated(true)
+//        dismissViewControllerAnimated(true, completion: nil)
+        navigationController?.popViewControllerAnimated(true)
+
 
     }
 }

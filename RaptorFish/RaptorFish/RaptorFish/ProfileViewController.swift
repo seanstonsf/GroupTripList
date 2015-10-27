@@ -38,6 +38,8 @@ class ProfileViewController: UIViewController {
     */
 
     @IBAction func CloseButtonPress(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+//        dismissViewControllerAnimated(true, completion: nil)
+        navigationController?.popViewControllerAnimated(true)
+
     }
 }

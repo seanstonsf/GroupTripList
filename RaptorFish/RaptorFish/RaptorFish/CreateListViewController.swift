@@ -32,4 +32,8 @@ class CreateListViewController: UIViewController {
     }
     */
 
+    @IBAction func newListCloseButton(sender: AnyObject) {
+//        dismissViewControllerAnimated(true, completion: nil)
+        navigationController?.popViewControllerAnimated(true)
+    }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		674F77F845AE9D3C4397F10F /* Pods_RaptorFish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 380B96D1770E0E208DAA3AA2 /* Pods_RaptorFish.framework */; };
+		B031B8AB1BDF40E000050D9C /* TemplatePreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B031B8AA1BDF40E000050D9C /* TemplatePreviewTableViewCell.swift */; };
 		B04BE6721BDBD35800DB292B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04BE6711BDBD35800DB292B /* ProfileViewController.swift */; };
 		B04BE6741BDBD36100DB292B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04BE6731BDBD36100DB292B /* SettingsViewController.swift */; };
 		B04BE6761BDBD36700DB292B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04BE6751BDBD36700DB292B /* LoginViewController.swift */; };
@@ -22,6 +24,10 @@
 		B06AA64D1BD9E11000886328 /* CreateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA64C1BD9E11000886328 /* CreateListViewController.swift */; };
 		B06AA64F1BD9E12100886328 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA64E1BD9E12100886328 /* TemplateViewController.swift */; };
 		B06AA6511BD9E16F00886328 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA6501BD9E16F00886328 /* ActivityViewController.swift */; };
+		B0A16DC21BDD924200D6D567 /* DetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A16DC11BDD924200D6D567 /* DetailListViewController.swift */; };
+		B0A16DC41BDD925C00D6D567 /* NewItemListSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A16DC31BDD925C00D6D567 /* NewItemListSelectionViewController.swift */; };
+		B0A16DC61BDD926800D6D567 /* TemplatePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A16DC51BDD926800D6D567 /* TemplatePreviewViewController.swift */; };
+		B0A16DC81BDD92A200D6D567 /* CreateTaskListSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A16DC71BDD92A200D6D567 /* CreateTaskListSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		380B96D1770E0E208DAA3AA2 /* Pods_RaptorFish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaptorFish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		555D34D85EF07C83A3BA8765 /* Pods-RaptorFish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaptorFish.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaptorFish/Pods-RaptorFish.release.xcconfig"; sourceTree = "<group>"; };
+		B031B8AA1BDF40E000050D9C /* TemplatePreviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplatePreviewTableViewCell.swift; sourceTree = "<group>"; };
 		B04BE6711BDBD35800DB292B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B04BE6731BDBD36100DB292B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B04BE6751BDBD36700DB292B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +72,11 @@
 		B06AA64C1BD9E11000886328 /* CreateListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateListViewController.swift; sourceTree = "<group>"; };
 		B06AA64E1BD9E12100886328 /* TemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
 		B06AA6501BD9E16F00886328 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		B0A16DC11BDD924200D6D567 /* DetailListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailListViewController.swift; sourceTree = "<group>"; };
+		B0A16DC31BDD925C00D6D567 /* NewItemListSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemListSelectionViewController.swift; sourceTree = "<group>"; };
+		B0A16DC51BDD926800D6D567 /* TemplatePreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplatePreviewViewController.swift; sourceTree = "<group>"; };
+		B0A16DC71BDD92A200D6D567 /* CreateTaskListSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskListSelectionViewController.swift; sourceTree = "<group>"; };
+		F7994E3EA3A67CE50DDCDD65 /* Pods-RaptorFish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaptorFish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaptorFish/Pods-RaptorFish.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				674F77F845AE9D3C4397F10F /* Pods_RaptorFish.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82E8E1A5F9FB56E9ABD2BA71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7994E3EA3A67CE50DDCDD65 /* Pods-RaptorFish.debug.xcconfig */,
+				555D34D85EF07C83A3BA8765 /* Pods-RaptorFish.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B06AA60E1BD9D73B00886328 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +121,8 @@
 				B06AA62E1BD9D73B00886328 /* RaptorFishTests */,
 				B06AA6391BD9D73B00886328 /* RaptorFishUITests */,
 				B06AA6181BD9D73B00886328 /* Products */,
+				82E8E1A5F9FB56E9ABD2BA71 /* Pods */,
+				FAC74907C01649F2E818F5AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,13 +141,18 @@
 			children = (
 				B06AA61A1BD9D73B00886328 /* AppDelegate.swift */,
 				B06AA61C1BD9D73B00886328 /* ViewController.swift */,
-				B06AA61E1BD9D73B00886328 /* Main.storyboard */,
 				B06AA6481BD9D8AC00886328 /* HomeViewController.swift */,
+				B06AA61E1BD9D73B00886328 /* Main.storyboard */,
 				B06AA64A1BD9E10400886328 /* CreateTaskViewController.swift */,
 				B06AA64C1BD9E11000886328 /* CreateListViewController.swift */,
 				B06AA64E1BD9E12100886328 /* TemplateViewController.swift */,
 				B06AA6501BD9E16F00886328 /* ActivityViewController.swift */,
 				B06AA6211BD9D73B00886328 /* Assets.xcassets */,
+				B0A16DC11BDD924200D6D567 /* DetailListViewController.swift */,
+				B0A16DC31BDD925C00D6D567 /* NewItemListSelectionViewController.swift */,
+				B0A16DC51BDD926800D6D567 /* TemplatePreviewViewController.swift */,
+				B0A16DC71BDD92A200D6D567 /* CreateTaskListSelectionViewController.swift */,
+				B031B8AA1BDF40E000050D9C /* TemplatePreviewTableViewCell.swift */,
 				B04BE6711BDBD35800DB292B /* ProfileViewController.swift */,
 				B04BE6731BDBD36100DB292B /* SettingsViewController.swift */,
 				B04BE6751BDBD36700DB292B /* LoginViewController.swift */,
@@ -149,6 +180,14 @@
 			path = RaptorFishUITests;
 			sourceTree = "<group>";
 		};
+		FAC74907C01649F2E818F5AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				380B96D1770E0E208DAA3AA2 /* Pods_RaptorFish.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B06AA63F1BD9D73B00886328 /* Build configuration list for PBXNativeTarget "RaptorFish" */;
 			buildPhases = (
+				8990141F5B4812E05F6F1B89 /* Check Pods Manifest.lock */,
 				B06AA6131BD9D73B00886328 /* Sources */,
 				B06AA6141BD9D73B00886328 /* Frameworks */,
 				B06AA6151BD9D73B00886328 /* Resources */,
+				FC15B6C1E4929627C0A8F503 /* Embed Pods Frameworks */,
+				568310333FD7CA85C3792320 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,6 +317,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		568310333FD7CA85C3792320 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RaptorFish/Pods-RaptorFish-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8990141F5B4812E05F6F1B89 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC15B6C1E4929627C0A8F503 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RaptorFish/Pods-RaptorFish-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B06AA6131BD9D73B00886328 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -283,12 +373,17 @@
 				B06AA61D1BD9D73B00886328 /* ViewController.swift in Sources */,
 				B06AA61B1BD9D73B00886328 /* AppDelegate.swift in Sources */,
 				B06AA64F1BD9E12100886328 /* TemplateViewController.swift in Sources */,
+				B0A16DC61BDD926800D6D567 /* TemplatePreviewViewController.swift in Sources */,
+				B0A16DC81BDD92A200D6D567 /* CreateTaskListSelectionViewController.swift in Sources */,
 				B06AA64D1BD9E11000886328 /* CreateListViewController.swift in Sources */,
+				B031B8AB1BDF40E000050D9C /* TemplatePreviewTableViewCell.swift in Sources */,
 				B06AA6511BD9E16F00886328 /* ActivityViewController.swift in Sources */,
 				B06AA6491BD9D8AC00886328 /* HomeViewController.swift in Sources */,
 				B04BE6721BDBD35800DB292B /* ProfileViewController.swift in Sources */,
 				B06AA64B1BD9E10400886328 /* CreateTaskViewController.swift in Sources */,
 				B04BE6761BDBD36700DB292B /* LoginViewController.swift in Sources */,
+				B0A16DC41BDD925C00D6D567 /* NewItemListSelectionViewController.swift in Sources */,
+				B0A16DC21BDD924200D6D567 /* DetailListViewController.swift in Sources */,
 				B04BE6741BDBD36100DB292B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +522,7 @@
 		};
 		B06AA6401BD9D73B00886328 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7994E3EA3A67CE50DDCDD65 /* Pods-RaptorFish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RaptorFish/Info.plist;
@@ -438,6 +534,7 @@
 		};
 		B06AA6411BD9D73B00886328 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 555D34D85EF07C83A3BA8765 /* Pods-RaptorFish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RaptorFish/Info.plist;
