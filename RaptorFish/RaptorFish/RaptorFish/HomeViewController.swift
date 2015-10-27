@@ -7,26 +7,54 @@
 //
 
 import UIKit
+import AFNetworking
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var homeScrollView: UIScrollView!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var createTaskButton: UIButton!
     @IBOutlet weak var createTemplateButton: UIButton!
     @IBOutlet weak var createListButton: UIButton!
 
+    @IBOutlet weak var homeListTableView: UITableView!
+    
+    var lists: [NSDictionary]!
+
+    var createTaskOrigin: CGPoint!
+    var createTemplateOrigin: CGPoint!
+    var createListOrigin: CGPoint!
+    
+    var createTaskDestination = CGPoint(x: 192, y: 104)
+    var createTemplateDestination = CGPoint(x: 106, y: 20)
+    var createListDestination = CGPoint(x: 20, y: 104)
+    
     var bgColor = UIColor(red:0.95, green:0.95, blue:0.95, alpha:1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-        homeScrollView.contentSize.height = CGFloat(1857)
         createListButton.alpha = 0
         createTaskButton.alpha = 0
         createTemplateButton.alpha = 0
         
+        createTaskOrigin = createTaskButton.frame.origin
+        createTemplateOrigin = createTemplateButton.frame.origin
+        createListOrigin = createListButton.frame.origin
+        
+        createTemplateButton.transform = CGAffineTransformMakeRotation((30 * CGFloat(M_PI)) / 180.0)
+
+        
+        homeListTableView.delegate = self
+        homeListTableView.dataSource = self
+        
+        lists = []
+        
+        let url = NSURL(string: "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=dagqdghwaq3e3mxyrp7kmmj5&limit=20&country=us")!
+        let request = NSURLRequest(URL: url)
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
+            let json = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
+            self.lists = json["movies"] as! [NSDictionary]
+            self.homeListTableView.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,22 +62,42 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     
-    @IBAction func addButtonPress(sender: AnyObject) {
-        createListButton.alpha = 1
-        createTaskButton.alpha = 1
-        createTemplateButton.alpha = 1
-   
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return lists.count
+    }
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = homeListTableView.dequeueReusableCellWithIdentifier("homeListCell") as! HomeListTableViewCell
+        let list = lists[indexPath.row]
+        cell.homeListCellTitleLabel.text = list["title"] as? String
+        cell.homeListCellSubTitleLabel.text = list["synopsis"] as? String
+        let urlString = list.valueForKeyPath("posters.original") as! String
+        let url = NSURL(string: urlString)!
+        cell.homeListCellBackgroundImageView.setImageWithURL(url)
+        return cell
+    }
+    
+    
+    
+    @IBAction func addButtonPress(sender: AnyObject){
+       
+        UIView.animateWithDuration(0.2) { () -> Void in
+            self.createListButton.alpha = 1
+            self.createTaskButton.alpha = 1
+            self.createTemplateButton.alpha = 1
+        }
+        UIView.animateWithDuration(0.5, delay: 0.1, usingSpringWithDamping: CGFloat(0.5), initialSpringVelocity: CGFloat(2.0), options: UIViewAnimationOptions.CurveEaseInOut , animations: { () -> Void in
+            self.createTaskButton.frame.origin = self.createTaskDestination
+            self.createTemplateButton.frame.origin = self.createTemplateDestination
+            self.createListButton.frame.origin = self.createListDestination
+            self.createTemplateButton.transform = CGAffineTransformMakeRotation((-30 * CGFloat(M_PI)) / 180.0)
+
+            self.addButton.transform = CGAffineTransformMakeRotation((-45 * CGFloat(M_PI)) / 180.0)
+
+            }, completion: nil)
+        
     }
 }

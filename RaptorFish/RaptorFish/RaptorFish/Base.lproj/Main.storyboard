@@ -353,78 +353,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="JEx-BD-opk">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="192" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZDB-f8-HY2">
+                                <rect key="frame" x="0.0" y="127" width="375" height="541"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="home_scrollView" id="oiW-J5-m3W">
-                                        <rect key="frame" x="0.0" y="321" width="375" height="1537"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Row1" id="8vD-KI-b8K">
-                                        <rect key="frame" x="0.0" y="128" width="375" height="194"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" image="Header" id="glq-OP-av0">
-                                        <rect key="frame" x="0.0" y="150" width="375" height="129"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
-                                    </imageView>
-                                </subviews>
                                 <animations/>
-                            </scrollView>
-                            <view contentMode="scaleToFill" id="upd-Lg-fxf">
-                                <rect key="frame" x="61" y="500" width="252" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eMH-y2-iQj">
-                                        <rect key="frame" x="98" y="100" width="54" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeListCell" id="gRi-vL-r1X" customClass="HomeListTableViewCell" customModule="RaptorFish" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="192"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gRi-vL-r1X" id="YQr-8r-HUC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="192"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DPh-ZX-Rmh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="192"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="LNG-BV-GhP">
+                                                    <rect key="frame" x="319" y="16" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="vCH-pK-R1r">
+                                                    <rect key="frame" x="16" y="136" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0kV-xP-PGn">
+                                                    <rect key="frame" x="16" y="92" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="qgg-OY-WZH">
+                                                    <rect key="frame" x="16" y="48" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUB DETAIL INFORMATION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SJa-aY-EdZ">
+                                                    <rect key="frame" x="72" y="155" width="244" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gqE-pc-4qO">
+                                                    <rect key="frame" x="72" y="91" width="244" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
                                         <animations/>
-                                        <state key="normal" image="AddButton"/>
                                         <connections>
-                                            <action selector="addButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4uX-3v-Miq"/>
+                                            <outlet property="homeListCellBackgroundImageView" destination="DPh-ZX-Rmh" id="9cp-dR-af9"/>
+                                            <outlet property="homeListCellLocationImageView" destination="LNG-BV-GhP" id="AMZ-Ip-dVz"/>
+                                            <outlet property="homeListCellMember1ImageView" destination="vCH-pK-R1r" id="UXX-P6-l4P"/>
+                                            <outlet property="homeListCellMember2ImageView" destination="0kV-xP-PGn" id="BH1-dS-ZeK"/>
+                                            <outlet property="homeListCellMember3ImageView" destination="qgg-OY-WZH" id="SqR-Su-3uN"/>
+                                            <outlet property="homeListCellSubTitleLabel" destination="SJa-aY-EdZ" id="AVa-Eg-cbX"/>
+                                            <outlet property="homeListCellTitleLabel" destination="gqE-pc-4qO" id="Sxm-Sb-xKt"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="q8U-mA-5Xq">
-                                        <rect key="frame" x="192" y="104" width="40" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
-                                        <state key="normal" image="CreateTaskButton"/>
-                                        <connections>
-                                            <segue destination="hgA-rC-gXK" kind="modal" modalTransitionStyle="coverVertical" id="u4o-Go-R9h"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4SH-pH-jT6">
-                                        <rect key="frame" x="20" y="104" width="38" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
-                                        <state key="normal" image="CreateListButton"/>
-                                        <connections>
-                                            <segue destination="vW1-vv-RLP" kind="push" id="oFW-MQ-h8i"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CzF-pV-NBV">
-                                        <rect key="frame" x="106" y="20" width="38" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
-                                        <state key="normal" image="CreateTemplateButton"/>
-                                        <connections>
-                                            <segue destination="54R-Oy-8hx" kind="modal" id="Dhv-78-hGe"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                             <view contentMode="scaleToFill" id="P5l-vG-G1y" userLabel="HeaderView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="2dv-yH-xlz">
-                                        <rect key="frame" x="0.0" y="127" width="375" height="1"/>
+                                        <rect key="frame" x="0.0" y="126" width="375" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.32156862749999998" green="0.98431372549999996" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -545,6 +554,50 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" id="upd-Lg-fxf" userLabel="Create Button Container View">
+                                <rect key="frame" x="61" y="500" width="252" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="q8U-mA-5Xq">
+                                        <rect key="frame" x="106" y="104" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <state key="normal" image="CreateTaskButton"/>
+                                        <connections>
+                                            <segue destination="hgA-rC-gXK" kind="modal" modalTransitionStyle="coverVertical" id="u4o-Go-R9h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4SH-pH-jT6">
+                                        <rect key="frame" x="106" y="104" width="38" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <state key="normal" image="CreateListButton"/>
+                                        <connections>
+                                            <segue destination="vW1-vv-RLP" kind="push" id="oFW-MQ-h8i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eMH-y2-iQj">
+                                        <rect key="frame" x="98" y="100" width="54" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <state key="normal" image="AddButton"/>
+                                        <connections>
+                                            <action selector="addButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4uX-3v-Miq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CzF-pV-NBV">
+                                        <rect key="frame" x="107" y="104" width="38" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <state key="normal" image="CreateTemplateButton"/>
+                                        <connections>
+                                            <segue destination="54R-Oy-8hx" kind="modal" id="Dhv-78-hGe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
@@ -556,7 +609,7 @@
                         <outlet property="createListButton" destination="4SH-pH-jT6" id="1vZ-pb-ge8"/>
                         <outlet property="createTaskButton" destination="q8U-mA-5Xq" id="b32-Vw-hZU"/>
                         <outlet property="createTemplateButton" destination="CzF-pV-NBV" id="cDh-bq-CU0"/>
-                        <outlet property="homeScrollView" destination="JEx-BD-opk" id="qyX-b0-G3i"/>
+                        <outlet property="homeListTableView" destination="ZDB-f8-HY2" id="iBc-e9-LoM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -853,16 +906,13 @@
         <image name="CreateListButton" width="38" height="40"/>
         <image name="CreateTaskButton" width="40" height="40"/>
         <image name="CreateTemplateButton" width="38" height="40"/>
-        <image name="Header" width="375" height="129"/>
         <image name="Login" width="375" height="667"/>
         <image name="Profile" width="375" height="601"/>
-        <image name="Row1" width="375" height="194"/>
         <image name="Settings" width="375" height="602"/>
         <image name="activities" width="334" height="1075"/>
         <image name="activityButtonBg" width="26" height="28"/>
         <image name="detailLIst_03" width="374" height="824"/>
         <image name="detailListHeader_01" width="375" height="234"/>
-        <image name="home_scrollView" width="375" height="1537"/>
         <image name="icon_close_x" width="20" height="20"/>
         <image name="newItem" width="375" height="667"/>
         <image name="newItem_listSelection" width="375" height="667"/>
