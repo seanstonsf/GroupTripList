@@ -46,8 +46,21 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         homeListTableView.delegate = self
         homeListTableView.dataSource = self
-        
+
         lists = []
+        
+//        lists = [
+//            [ "title" : "The Martian",
+//              "synopsis" : "sdf",
+//            ],
+//            [ "title" : "The Martian",
+//             "synopsis" : "sdf",
+//            ],
+//            [ "title" : "The Martian",
+//                "synopsis" : "sdf",
+//            ],
+//        
+//        ]
         
         let url = NSURL(string: "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=dagqdghwaq3e3mxyrp7kmmj5&limit=20&country=us")!
         let request = NSURLRequest(URL: url)
@@ -100,5 +113,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
             }, completion: nil)
         
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = homeListTableView.indexPathForCell(cell)!
+        
+        let detailListViewController = segue.destinationViewController as! DetailListViewController
+        
+        detailListViewController.list = lists[indexPath.row]
     }
 }
