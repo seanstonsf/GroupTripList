@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '067C922014C02B747417D631'
+               BlueprintIdentifier = 'D36E648E15C0A06EAA3C2A54'
                BlueprintName = 'Pods-RaptorFish'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_RaptorFish.framework'>
