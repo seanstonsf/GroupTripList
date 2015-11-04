@@ -20,11 +20,23 @@ PODS:
   - AFNetworking/UIKit (2.6.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Bolts (1.4.0):
+    - Bolts/AppLinks (= 1.4.0)
+    - Bolts/Tasks (= 1.4.0)
+  - Bolts/AppLinks (1.4.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.4.0)
+  - Parse (1.9.1):
+    - Bolts/Tasks (>= 1.4.0)
 
 DEPENDENCIES:
   - AFNetworking
+  - Bolts
+  - Parse
 
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
+  Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
 
 COCOAPODS: 0.39.0
