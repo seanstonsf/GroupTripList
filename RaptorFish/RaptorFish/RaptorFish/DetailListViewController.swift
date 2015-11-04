@@ -17,10 +17,14 @@ class DetailListViewController: UIViewController {
     @IBOutlet var tabButtons: [UIButton]!
     
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
     var taskViewController: UIViewController!
     var activityViewController: UIViewController!
     var viewControllers: [UIViewController]!
     var selectedIndex: Int = 0
+    
+    var list: NSDictionary!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +45,8 @@ class DetailListViewController: UIViewController {
         
 //        detailScrollImageView.frame.origin = detailScrollImageView.frame.offsetBy(dx: 0, dy: -60)
         // Do any additional setup after loading the view.
+        
+        titleLabel.text = list["title"] as? String
     }
 
     override func didReceiveMemoryWarning() {
