@@ -15,7 +15,6 @@
 		B06AA61B1BD9D73B00886328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA61A1BD9D73B00886328 /* AppDelegate.swift */; };
 		B06AA61D1BD9D73B00886328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA61C1BD9D73B00886328 /* ViewController.swift */; };
 		B06AA6201BD9D73B00886328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B06AA61E1BD9D73B00886328 /* Main.storyboard */; };
-		B06AA6221BD9D73B00886328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B06AA6211BD9D73B00886328 /* Assets.xcassets */; };
 		B06AA6251BD9D73B00886328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B06AA6231BD9D73B00886328 /* LaunchScreen.storyboard */; };
 		B06AA6301BD9D73B00886328 /* RaptorFishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA62F1BD9D73B00886328 /* RaptorFishTests.swift */; };
 		B06AA63B1BD9D73B00886328 /* RaptorFishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AA63A1BD9D73B00886328 /* RaptorFishUITests.swift */; };
@@ -29,6 +28,9 @@
 		B0A16DC61BDD926800D6D567 /* TemplatePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A16DC51BDD926800D6D567 /* TemplatePreviewViewController.swift */; };
 		B0A16DC81BDD92A200D6D567 /* CreateTaskListSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A16DC71BDD92A200D6D567 /* CreateTaskListSelectionViewController.swift */; };
 		B0C445321BDF5C520028AECD /* HomeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C445311BDF5C520028AECD /* HomeListTableViewCell.swift */; };
+		CC99B26B1BE9A53B000C37DD /* TasksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99B26A1BE9A53B000C37DD /* TasksTableViewCell.swift */; };
+		CC99B26D1BE9A56C000C37DD /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99B26C1BE9A56C000C37DD /* TasksViewController.swift */; };
+		CCD0E49F1BE2E93900A5B804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD0E49E1BE2E93900A5B804 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +61,6 @@
 		B06AA61A1BD9D73B00886328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B06AA61C1BD9D73B00886328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B06AA61F1BD9D73B00886328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B06AA6211BD9D73B00886328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B06AA6241BD9D73B00886328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B06AA6261BD9D73B00886328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B06AA62B1BD9D73B00886328 /* RaptorFishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaptorFishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +79,9 @@
 		B0A16DC51BDD926800D6D567 /* TemplatePreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplatePreviewViewController.swift; sourceTree = "<group>"; };
 		B0A16DC71BDD92A200D6D567 /* CreateTaskListSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskListSelectionViewController.swift; sourceTree = "<group>"; };
 		B0C445311BDF5C520028AECD /* HomeListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListTableViewCell.swift; sourceTree = "<group>"; };
+		CC99B26A1BE9A53B000C37DD /* TasksTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksTableViewCell.swift; sourceTree = "<group>"; };
+		CC99B26C1BE9A56C000C37DD /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		CCD0E49E1BE2E93900A5B804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7994E3EA3A67CE50DDCDD65 /* Pods-RaptorFish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaptorFish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaptorFish/Pods-RaptorFish.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,15 +150,17 @@
 				B06AA61C1BD9D73B00886328 /* ViewController.swift */,
 				B06AA6481BD9D8AC00886328 /* HomeViewController.swift */,
 				B06AA61E1BD9D73B00886328 /* Main.storyboard */,
+				CC99B26C1BE9A56C000C37DD /* TasksViewController.swift */,
+				CC99B26A1BE9A53B000C37DD /* TasksTableViewCell.swift */,
 				B06AA64A1BD9E10400886328 /* CreateTaskViewController.swift */,
 				B06AA64C1BD9E11000886328 /* CreateListViewController.swift */,
 				B06AA64E1BD9E12100886328 /* TemplateViewController.swift */,
 				B06AA6501BD9E16F00886328 /* ActivityViewController.swift */,
-				B06AA6211BD9D73B00886328 /* Assets.xcassets */,
 				B0A16DC11BDD924200D6D567 /* DetailListViewController.swift */,
 				B0A16DC31BDD925C00D6D567 /* NewItemListSelectionViewController.swift */,
 				B0A16DC51BDD926800D6D567 /* TemplatePreviewViewController.swift */,
 				B0A16DC71BDD92A200D6D567 /* CreateTaskListSelectionViewController.swift */,
+				CCD0E49E1BE2E93900A5B804 /* Assets.xcassets */,
 				B031B8AA1BDF40E000050D9C /* TemplatePreviewTableViewCell.swift */,
 				B04BE6711BDBD35800DB292B /* ProfileViewController.swift */,
 				B04BE6731BDBD36100DB292B /* SettingsViewController.swift */,
@@ -299,7 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B06AA6251BD9D73B00886328 /* LaunchScreen.storyboard in Resources */,
-				B06AA6221BD9D73B00886328 /* Assets.xcassets in Resources */,
+				CCD0E49F1BE2E93900A5B804 /* Assets.xcassets in Resources */,
 				B06AA6201BD9D73B00886328 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +384,7 @@
 				B06AA64F1BD9E12100886328 /* TemplateViewController.swift in Sources */,
 				B0A16DC61BDD926800D6D567 /* TemplatePreviewViewController.swift in Sources */,
 				B0A16DC81BDD92A200D6D567 /* CreateTaskListSelectionViewController.swift in Sources */,
+				CC99B26B1BE9A53B000C37DD /* TasksTableViewCell.swift in Sources */,
 				B06AA64D1BD9E11000886328 /* CreateListViewController.swift in Sources */,
 				B031B8AB1BDF40E000050D9C /* TemplatePreviewTableViewCell.swift in Sources */,
 				B06AA6511BD9E16F00886328 /* ActivityViewController.swift in Sources */,
@@ -389,6 +396,7 @@
 				B0A16DC21BDD924200D6D567 /* DetailListViewController.swift in Sources */,
 				B0C445321BDF5C520028AECD /* HomeListTableViewCell.swift in Sources */,
 				B04BE6741BDBD36100DB292B /* SettingsViewController.swift in Sources */,
+				CC99B26D1BE9A56C000C37DD /* TasksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
