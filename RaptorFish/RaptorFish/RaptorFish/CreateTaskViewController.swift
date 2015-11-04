@@ -11,7 +11,7 @@ import Parse
 import Bolts
 import AFNetworking
 
-class CreateTaskViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class CreateTaskViewController: UIViewController{
 
     @IBOutlet weak var itemNameTextField: UITextField!
     @IBOutlet weak var itemDescriptionTextField: UITextField!
@@ -23,54 +23,14 @@ class CreateTaskViewController: UIViewController, UICollectionViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        newItemCollectionView.delegate = self
-        newItemCollectionView.dataSource = self
+//        newItemCollectionView.delegate = self
+//        newItemCollectionView.dataSource = self
     
         members = []
         
         NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "onTimer", userInfo: nil, repeats: true)
-        
-    }
-    
-    func onTimer() {
-        let query = PFQuery(className: "Message")
-        query.orderByDescending("createdAt")
-        query.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
-            print(objects)
-            self.messages = objects
-            self.messagesTableView.reloadData()
-        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    @IBAction func onSendButtonPress(sender: AnyObject) {
-        let message = PFObject(className: "Message")
-        
-        message["text"] = messageTextField.text
-        message.saveInBackgroundWithBlock{ (Bool, error: NSError?) -> Void in
-            print("message saved")
-            
-            self.messageTextField.text = ""
-        }
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return messages.count
-    }
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = messagesTableView.dequeueReusableCellWithIdentifier("MessageCell")
-            as! MessageTableViewCell
-        
-        let message = messages[indexPath.row]
-        
-        cell.messageCellLabel.text = message["text"] as? String
-        
-        return cell
-    }
-    
     
     @IBAction func newItemCloseButtonPress(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
