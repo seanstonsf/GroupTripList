@@ -16,6 +16,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var createTemplateButton: UIButton!
     @IBOutlet weak var createListButton: UIButton!
 
+    @IBOutlet weak var headerProfileImageView: UIImageView!
     @IBOutlet weak var homeListTableView: UITableView!
     
     var lists: [NSDictionary]!
@@ -36,12 +37,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         createTaskButton.alpha = 0
         createTemplateButton.alpha = 0
         
+        headerProfileImageView.layer.cornerRadius = headerProfileImageView.frame.size.width / 2
+
+        
         createTaskOrigin = createTaskButton.frame.origin
         createTemplateOrigin = createTemplateButton.frame.origin
         createListOrigin = createListButton.frame.origin
-        
-        createTemplateButton.transform = CGAffineTransformMakeRotation((30 * CGFloat(M_PI)) / 180.0)
-
         
         homeListTableView.delegate = self
         homeListTableView.dataSource = self
@@ -93,9 +94,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.createTaskButton.frame.origin = self.createTaskDestination
             self.createTemplateButton.frame.origin = self.createTemplateDestination
             self.createListButton.frame.origin = self.createListDestination
-            self.createTemplateButton.transform = CGAffineTransformMakeRotation((-30 * CGFloat(M_PI)) / 180.0)
+//            self.createTemplateButton.transform = CGAffineTransformMakeRotation((-30 * CGFloat(M_PI)) / 180.0)
 
-            self.addButton.transform = CGAffineTransformMakeRotation((-45 * CGFloat(M_PI)) / 180.0)
+//            self.addButton.transform = CGAffineTransformMakeRotation((-45 * CGFloat(M_PI)) / 180.0)
 
             }, completion: nil)
         

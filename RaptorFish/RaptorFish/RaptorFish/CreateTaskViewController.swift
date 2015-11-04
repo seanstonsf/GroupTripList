@@ -7,21 +7,35 @@
 //
 
 import UIKit
+import Parse
+import Bolts
+import AFNetworking
 
-class CreateTaskViewController: UIViewController {
+class CreateTaskViewController: UIViewController{
 
+    @IBOutlet weak var itemNameTextField: UITextField!
+    @IBOutlet weak var itemDescriptionTextField: UITextField!
+    @IBOutlet weak var membersTabSelectedBar: UIView!
+    @IBOutlet weak var newItemCollectionView: UICollectionView!
+
+    var members: [PFObject]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+//        newItemCollectionView.delegate = self
+//        newItemCollectionView.dataSource = self
+    
+        members = []
+        
+        NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "onTimer", userInfo: nil, repeats: true)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func newItemCloseButtonPress(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -31,8 +45,6 @@ class CreateTaskViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func newItemCloseButtonPress(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
+
 
 }
