@@ -6,6 +6,15 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
+<<<<<<< HEAD
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Pods-RaptorFish.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+=======
 			<key>isShown</key>
 			<false/>
 		</dict>
@@ -23,6 +32,7 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+>>>>>>> master
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -32,6 +42,9 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+<<<<<<< HEAD
+		<key>84AC8E4BEEEC28733F15A33F8DD562DF</key>
+=======
 		<key>57ADC05E440A960212657DE6DA1FEDD5</key>
 		<dict>
 			<key>primary</key>
@@ -43,6 +56,7 @@
 			<true/>
 		</dict>
 		<key>B8A759F57254B6094CF99273E5ECEE8B</key>
+>>>>>>> master
 		<dict>
 			<key>primary</key>
 			<true/>
