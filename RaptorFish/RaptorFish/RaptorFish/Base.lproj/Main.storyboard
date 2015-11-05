@@ -438,12 +438,6 @@
                                     <action selector="didPressTab:" destination="LpE-YD-dgH" eventType="touchUpInside" id="sDQ-hl-wU5"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" id="AU0-Kj-pRb">
-                                <rect key="frame" x="0.0" y="199" width="375" height="468"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task List Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c6m-pT-nAg">
                                 <rect key="frame" x="16" y="62" width="339" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -480,6 +474,12 @@
                                 <color key="textColor" red="0.0" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" id="AU0-Kj-pRb">
+                                <rect key="frame" x="0.0" y="199" width="375" height="468"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -528,7 +528,7 @@
                                     </connections>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="taskCell" rowHeight="60" id="KsT-2c-H3y" customClass="TasksTableViewCell" customModule="RaptorFish" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="taskCell" rowHeight="60" id="KsT-2c-H3y" customClass="TasksTableViewCell" customModule="RaptorFish" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KsT-2c-H3y" id="hbr-2F-lA8">
@@ -543,7 +543,15 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Qf5-A1-5Z5">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ksi-V8-lvO">
+                                                    <rect key="frame" x="0.0" y="-4" width="378" height="63"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <connections>
+                                                        <action selector="taskCellButtonPressed:" destination="KsT-2c-H3y" eventType="touchUpInside" id="c3N-Wg-NsP"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_check_list" id="Qf5-A1-5Z5">
                                                     <rect key="frame" x="13" y="19" width="20" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
@@ -763,7 +771,10 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
-                                        <state key="normal" title="5" backgroundImage="activityButtonBg"/>
+                                        <color key="tintColor" red="0.0" green="0.50196078430000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="5" backgroundImage="activityButtonBg">
+                                            <color key="titleColor" red="0.0" green="0.50196078430000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="E0Q-bD-JcC" kind="modal" id="tJY-lx-RKt"/>
                                         </connections>
@@ -1543,7 +1554,7 @@
                         <outlet property="membersFirstLabel" destination="Qe5-US-LLc" id="ClC-Ze-ze2"/>
                         <outlet property="membersFirstView" destination="PIB-9k-Exx" id="fAq-nO-bNA"/>
                         <outlet property="membersSecondImageView" destination="5B6-RD-RS4" id="lxH-Wa-PsE"/>
-                        <outlet property="membersSecondView" destination="eNh-UH-tbQ" id="c3U-VY-0Ag"/>
+                        <outlet property="membersSecondView" destination="3Wn-ca-i5S" id="HT7-sI-48t"/>
                         <outlet property="membersThirdImageView" destination="EAN-FW-dOB" id="02g-nd-ebx"/>
                         <outlet property="membersThirdView" destination="eNh-UH-tbQ" id="X3J-Ab-fVs"/>
                         <outlet property="privacySwitch" destination="NWZ-yK-xuT" id="8gH-mb-CaF"/>
