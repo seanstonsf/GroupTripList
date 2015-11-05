@@ -53,6 +53,11 @@ class CreateTaskViewController: UIViewController{
     
     var titleLabel: String!
     
+    var lists: [NSDictionary]! {
+        get { return AppDelegate.shareAppDelegate().lists }
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         taskScrollView.contentSize.height = itemInfoContainerView.frame.height + listContainerView.frame.height
@@ -67,22 +72,12 @@ class CreateTaskViewController: UIViewController{
         buttonFiveCheckImageView.alpha = 0
         buttonSixCheckImageView.alpha = 0
         
-        titleLabel = ""
-        
-        members = [
-            [ "memberName" : "Tim",
-                "memberImage" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
-                
-            ],
-            [ "memberName" : "Randy",
-                "memberImage" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
-                
-            ],
-            [ "memberName" : "The Martian",
-                "memberImage" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
-                
-            ],
-        ]
+        rowOneButton.setTitle("We Need Names", forState: .Normal)
+        rowTwoButton.setTitle("We Need Names", forState: .Normal)
+        rowThreeButton.setTitle("We Need Names", forState: .Normal)
+        rowFourButton.setTitle("We Need Names", forState: .Normal)
+        rowFiveButton.setTitle("We Need Names", forState: .Normal)
+        rowSixButton.setTitle("We Need Names", forState: .Normal)
         
             
         membersFirstImageView.layer.cornerRadius = membersFirstImageView.frame.size.width / 2
