@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		674F77F845AE9D3C4397F10F /* Pods_RaptorFish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 380B96D1770E0E208DAA3AA2 /* Pods_RaptorFish.framework */; };
+		AE41F5831BEA0ED00042B684 /* FBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41F5821BEA0ED00042B684 /* FBViewController.swift */; };
+		AE41F5851BEA10250042B684 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41F5841BEA10250042B684 /* BaseTransition.swift */; };
+		AE41F5871BEA10890042B684 /* LightBoxTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41F5861BEA10890042B684 /* LightBoxTransition.swift */; };
+		AE41F5891BEA14A00042B684 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41F5881BEA14A00042B684 /* FadeTransition.swift */; };
 		B031B8AB1BDF40E000050D9C /* TemplatePreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B031B8AA1BDF40E000050D9C /* TemplatePreviewTableViewCell.swift */; };
 		B04BE6721BDBD35800DB292B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04BE6711BDBD35800DB292B /* ProfileViewController.swift */; };
 		B04BE6741BDBD36100DB292B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04BE6731BDBD36100DB292B /* SettingsViewController.swift */; };
@@ -53,6 +57,10 @@
 /* Begin PBXFileReference section */
 		380B96D1770E0E208DAA3AA2 /* Pods_RaptorFish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaptorFish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		555D34D85EF07C83A3BA8765 /* Pods-RaptorFish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaptorFish.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaptorFish/Pods-RaptorFish.release.xcconfig"; sourceTree = "<group>"; };
+		AE41F5821BEA0ED00042B684 /* FBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBViewController.swift; sourceTree = "<group>"; };
+		AE41F5841BEA10250042B684 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		AE41F5861BEA10890042B684 /* LightBoxTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightBoxTransition.swift; sourceTree = "<group>"; };
+		AE41F5881BEA14A00042B684 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 		B031B8AA1BDF40E000050D9C /* TemplatePreviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplatePreviewTableViewCell.swift; sourceTree = "<group>"; };
 		B04BE6711BDBD35800DB292B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B04BE6731BDBD36100DB292B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +158,8 @@
 				B06AA61C1BD9D73B00886328 /* ViewController.swift */,
 				B06AA6481BD9D8AC00886328 /* HomeViewController.swift */,
 				B06AA61E1BD9D73B00886328 /* Main.storyboard */,
+				AE41F5861BEA10890042B684 /* LightBoxTransition.swift */,
+				AE41F5821BEA0ED00042B684 /* FBViewController.swift */,
 				CC99B26C1BE9A56C000C37DD /* TasksViewController.swift */,
 				CC99B26A1BE9A53B000C37DD /* TasksTableViewCell.swift */,
 				B06AA64A1BD9E10400886328 /* CreateTaskViewController.swift */,
@@ -157,6 +167,8 @@
 				B06AA64E1BD9E12100886328 /* TemplateViewController.swift */,
 				B06AA6501BD9E16F00886328 /* ActivityViewController.swift */,
 				B0A16DC11BDD924200D6D567 /* DetailListViewController.swift */,
+				AE41F5841BEA10250042B684 /* BaseTransition.swift */,
+				AE41F5881BEA14A00042B684 /* FadeTransition.swift */,
 				B0A16DC31BDD925C00D6D567 /* NewItemListSelectionViewController.swift */,
 				B0A16DC51BDD926800D6D567 /* TemplatePreviewViewController.swift */,
 				B0A16DC71BDD92A200D6D567 /* CreateTaskListSelectionViewController.swift */,
@@ -380,9 +392,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B06AA61D1BD9D73B00886328 /* ViewController.swift in Sources */,
+				AE41F5851BEA10250042B684 /* BaseTransition.swift in Sources */,
+				AE41F5831BEA0ED00042B684 /* FBViewController.swift in Sources */,
 				B06AA61B1BD9D73B00886328 /* AppDelegate.swift in Sources */,
 				B06AA64F1BD9E12100886328 /* TemplateViewController.swift in Sources */,
 				B0A16DC61BDD926800D6D567 /* TemplatePreviewViewController.swift in Sources */,
+				AE41F5891BEA14A00042B684 /* FadeTransition.swift in Sources */,
+				AE41F5871BEA10890042B684 /* LightBoxTransition.swift in Sources */,
 				B0A16DC81BDD92A200D6D567 /* CreateTaskListSelectionViewController.swift in Sources */,
 				CC99B26B1BE9A53B000C37DD /* TasksTableViewCell.swift in Sources */,
 				B06AA64D1BD9E11000886328 /* CreateListViewController.swift in Sources */,

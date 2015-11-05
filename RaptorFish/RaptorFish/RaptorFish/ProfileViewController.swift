@@ -9,6 +9,8 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    
+    @IBOutlet weak var settingsButton: UIButton!
 
     @IBOutlet weak var closeButton: UIButton!
 //    @IBOutlet weak var settingsNavigationButton: UIButton!

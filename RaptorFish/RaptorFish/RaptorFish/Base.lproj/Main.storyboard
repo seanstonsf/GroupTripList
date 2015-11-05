@@ -157,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omp-zP-1RE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="300.5" y="-258.5"/>
+            <point key="canvasLocation" x="294.5" y="-512.5"/>
         </scene>
         <!--Template Preview View Controller-->
         <scene sceneID="HLu-SD-vhq">
@@ -311,7 +311,7 @@
                                 <animations/>
                             </imageView>
                             <view contentMode="scaleToFill" id="EqL-bZ-gHG">
-                                <rect key="frame" x="0.0" y="150" width="374.5" height="50"/>
+                                <rect key="frame" x="0.0" y="150" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -333,7 +333,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iaf-v7-Sm2">
-                                <rect key="frame" x="187" y="150" width="187.5" height="50"/>
+                                <rect key="frame" x="187" y="150" width="188" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" image="activityTab"/>
@@ -343,7 +343,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DMq-eT-WPZ">
-                                <rect key="frame" x="0.0" y="150" width="187.5" height="50"/>
+                                <rect key="frame" x="0.0" y="150" width="188" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" image="tasksTab"/>
@@ -353,7 +353,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="AU0-Kj-pRb">
-                                <rect key="frame" x="0.0" y="199" width="374.5" height="468"/>
+                                <rect key="frame" x="0.0" y="199" width="375" height="468"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -402,7 +402,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KsT-2c-H3y" id="hbr-2F-lA8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tP8-ug-Hdk">
@@ -508,11 +508,11 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="homeListCell" id="gRi-vL-r1X" customClass="HomeListTableViewCell" customModule="RaptorFish" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeListCell" id="gRi-vL-r1X" customClass="HomeListTableViewCell" customModule="RaptorFish" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="192"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gRi-vL-r1X" id="YQr-8r-HUC">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="192"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="192"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DPh-ZX-Rmh">
@@ -534,13 +534,13 @@
                                                     <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0kV-xP-PGn">
-                                                    <rect key="frame" x="16" y="92" width="40" height="40"/>
+                                                    <rect key="frame" x="16" y="90" width="40" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="qgg-OY-WZH">
-                                                    <rect key="frame" x="16" y="48" width="40" height="40"/>
+                                                    <rect key="frame" x="16" y="44" width="40" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -554,7 +554,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gqE-pc-4qO">
-                                                    <rect key="frame" x="72" y="91" width="244" height="57"/>
+                                                    <rect key="frame" x="72" y="101" width="244" height="57"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
@@ -597,7 +597,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <connections>
-                                                    <segue destination="3v5-kR-uiM" kind="push" id="4Oh-xN-Yhd"/>
+                                                    <segue destination="3v5-kR-uiM" kind="push" id="2jS-p7-9PE"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ySk-yG-fIQ">
@@ -881,9 +881,6 @@
                                 <state key="normal" title="Settings">
                                     <color key="titleColor" red="0.32156862749999998" green="0.98431372549999996" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="nyK-Uz-8Pp" kind="push" id="Vll-9R-6dd"/>
-                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -895,6 +892,7 @@
                         <outlet property="closeButton" destination="amM-EO-dIy" id="F1T-tg-GMo"/>
                         <outlet property="profileImageView" destination="8Sc-VN-r1J" id="aDb-4Y-RfE"/>
                         <outlet property="profileScrollView" destination="ZCO-h9-ujC" id="m9w-DH-6rd"/>
+                        <outlet property="settingsButton" destination="qBf-mM-4po" id="uBZ-jk-02F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DOh-Ci-W3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -914,12 +912,13 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="m5B-NJ-iPx">
-                                <rect key="frame" x="0.0" y="540" width="375" height="68"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wwi-Fn-bwf">
+                                <rect key="frame" x="0.0" y="434" width="375" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
+                                <state key="normal" image="Loginbutton"/>
                                 <connections>
-                                    <segue destination="cV2-Dp-Hbt" kind="modal" modalTransitionStyle="crossDissolve" id="hlC-Kr-cgN"/>
+                                    <segue destination="jfQ-p1-N1f" kind="modal" id="3Kf-79-Cd8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -930,7 +929,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UUe-WZ-jrx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-714.5" y="486.5"/>
+            <point key="canvasLocation" x="-1196.5" y="486.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hmw-7i-HKQ">
+            <objects>
+                <viewController id="jfQ-p1-N1f" customClass="FBViewController" customModule="RaptorFish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Dx-3Z-mpr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="LoginFB" id="cZg-Xn-AWF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o2s-Ol-q05">
+                                <rect key="frame" x="195" y="601" width="165" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="cV2-Dp-Hbt" kind="modal" modalTransitionStyle="crossDissolve" id="6Rx-rP-0jR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="okButton" destination="o2s-Ol-q05" id="J1d-tp-uTv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hbb-fk-pnb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-710.5" y="481.5"/>
         </scene>
         <!--Activity View Controller-->
         <scene sceneID="ltw-rs-szS">
@@ -1268,20 +1300,22 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWt-Ca-rhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-181.5" y="486.5"/>
+            <point key="canvasLocation" x="-181.5" y="481.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Activity" width="375" height="602"/>
+        <image name="Activity" width="375" height="601"/>
         <image name="AddButton" width="54" height="48"/>
         <image name="BarbadosBackground@2x_Background" width="781" height="417"/>
         <image name="CreateListButton" width="38" height="40"/>
         <image name="CreateTaskButton" width="40" height="40"/>
         <image name="CreateTemplateButton" width="38" height="40"/>
         <image name="Login" width="375" height="667"/>
+        <image name="LoginFB" width="375" height="667"/>
+        <image name="Loginbutton" width="375" height="68"/>
         <image name="NewImageBG@2" width="781" height="377"/>
-        <image name="Profile" width="375" height="601"/>
-        <image name="Settings" width="375" height="602"/>
+        <image name="Profile" width="375" height="602"/>
+        <image name="Settings" width="375" height="601"/>
         <image name="activities" width="334" height="1075"/>
         <image name="activityButtonBg" width="26" height="28"/>
         <image name="activityTab" width="195" height="52"/>
@@ -1296,7 +1330,7 @@
         <image name="template_preview_03" width="375" height="62"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="g76-p4-ZM7"/>
         <segue reference="U98-1f-uZF"/>
-        <segue reference="6yE-Nu-pEq"/>
     </inferredMetricsTieBreakers>
 </document>

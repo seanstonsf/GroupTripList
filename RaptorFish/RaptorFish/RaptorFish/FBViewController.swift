@@ -10,6 +10,8 @@ import UIKit
 
 class FBViewController: UIViewController {
 
+    @IBOutlet weak var okButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
