@@ -12,6 +12,7 @@
 		AE41F5851BEA10250042B684 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41F5841BEA10250042B684 /* BaseTransition.swift */; };
 		AE41F5871BEA10890042B684 /* LightBoxTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41F5861BEA10890042B684 /* LightBoxTransition.swift */; };
 		AE41F5891BEA14A00042B684 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41F5881BEA14A00042B684 /* FadeTransition.swift */; };
+		AEAA6C151BEB1CFF00A9D5A1 /* CustomNavigationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA6C141BEB1CFF00A9D5A1 /* CustomNavigationAnimationController.swift */; };
 		B031B8AB1BDF40E000050D9C /* TemplatePreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B031B8AA1BDF40E000050D9C /* TemplatePreviewTableViewCell.swift */; };
 		B04BE6721BDBD35800DB292B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04BE6711BDBD35800DB292B /* ProfileViewController.swift */; };
 		B04BE6741BDBD36100DB292B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04BE6731BDBD36100DB292B /* SettingsViewController.swift */; };
@@ -61,6 +62,7 @@
 		AE41F5841BEA10250042B684 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
 		AE41F5861BEA10890042B684 /* LightBoxTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightBoxTransition.swift; sourceTree = "<group>"; };
 		AE41F5881BEA14A00042B684 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		AEAA6C141BEB1CFF00A9D5A1 /* CustomNavigationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationAnimationController.swift; sourceTree = "<group>"; };
 		B031B8AA1BDF40E000050D9C /* TemplatePreviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplatePreviewTableViewCell.swift; sourceTree = "<group>"; };
 		B04BE6711BDBD35800DB292B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B04BE6731BDBD36100DB292B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				B06AA61C1BD9D73B00886328 /* ViewController.swift */,
 				B06AA6481BD9D8AC00886328 /* HomeViewController.swift */,
 				B06AA61E1BD9D73B00886328 /* Main.storyboard */,
+				AEAA6C141BEB1CFF00A9D5A1 /* CustomNavigationAnimationController.swift */,
 				AE41F5861BEA10890042B684 /* LightBoxTransition.swift */,
 				AE41F5821BEA0ED00042B684 /* FBViewController.swift */,
 				CC99B26C1BE9A56C000C37DD /* TasksViewController.swift */,
@@ -413,6 +416,7 @@
 				B0C445321BDF5C520028AECD /* HomeListTableViewCell.swift in Sources */,
 				B04BE6741BDBD36100DB292B /* SettingsViewController.swift in Sources */,
 				CC99B26D1BE9A56C000C37DD /* TasksViewController.swift in Sources */,
+				AEAA6C151BEB1CFF00A9D5A1 /* CustomNavigationAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
