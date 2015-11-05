@@ -8,12 +8,14 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
     
     var fadeTransition: Some3DTransition!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -24,7 +26,7 @@ class LoginViewController: UIViewController {
     }
     
     
-   
+    
    
     // MARK: - Navigation
 
