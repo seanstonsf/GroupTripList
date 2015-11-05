@@ -13,7 +13,7 @@ class HomeListTableViewCell: UITableViewCell {
     @IBOutlet weak var homeListCellTitleLabel: UILabel!
     @IBOutlet weak var homeListCellSubTitleLabel: UILabel!
     @IBOutlet weak var homeListCellBackgroundImageView: UIImageView!
-    @IBOutlet weak var homeListCellLocationImageView: UIImageView!
+    //@IBOutlet weak var homeListCellLocationImageView: UIImageView!
     @IBOutlet weak var homeListCellMember1ImageView: UIImageView!
     @IBOutlet weak var homeListCellMember2ImageView: UIImageView!
     @IBOutlet weak var homeListCellMember3ImageView: UIImageView!
@@ -22,10 +22,9 @@ class HomeListTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-//        homeListCellMember1ImageView.layer.cornerRadius = homeListCellMember1ImageView.frame.size.width / 2
-//        homeListCellMember2ImageView.layer.cornerRadius = homeListCellMember2ImageView.frame.size.width / 2
-//        homeListCellMember3ImageView.layer.cornerRadius = homeListCellMember3ImageView.frame.size.width / 2
-//        homeListCellLocationImageView.layer.cornerRadius = homeListCellLocationImageView.frame.size.width / 2
+        homeListCellMember1ImageView.layer.cornerRadius = homeListCellMember1ImageView.frame.size.width / 2
+        homeListCellMember2ImageView.layer.cornerRadius = homeListCellMember2ImageView.frame.size.width / 2
+        homeListCellMember3ImageView.layer.cornerRadius = homeListCellMember3ImageView.frame.size.width / 2
 
     }
 

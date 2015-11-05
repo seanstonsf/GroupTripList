@@ -316,7 +316,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lcs-G8-frl">
-                                <rect key="frame" x="17" y="22" width="12" height="22"/>
+                                <rect key="frame" x="17" y="27" width="12" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="Back_Arrow"/>
@@ -359,33 +359,40 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task List Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c6m-pT-nAg">
-                                <rect key="frame" x="16" y="64" width="339" height="30"/>
+                                <rect key="frame" x="16" y="62" width="339" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="eNw-eY-8zz">
-                                <rect key="frame" x="18" y="102" width="30" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="eNw-eY-8zz">
+                                <rect key="frame" x="18" y="117" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Ab0-Xo-5DO">
-                                <rect key="frame" x="56" y="102" width="30" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Ab0-Xo-5DO">
+                                <rect key="frame" x="56" y="117" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="hHj-sN-6SO">
-                                <rect key="frame" x="94" y="102" width="30" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="hHj-sN-6SO">
+                                <rect key="frame" x="94" y="117" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="v8I-iw-f3p">
-                                <rect key="frame" x="132" y="102" width="30" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="v8I-iw-f3p">
+                                <rect key="frame" x="132" y="117" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUB DETAIL INFORMATION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W90-8V-l3z">
+                                <rect key="frame" x="18" y="91" width="244" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -394,6 +401,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="contentView" destination="AU0-Kj-pRb" id="Bh5-hB-YAV"/>
+                        <outlet property="subLabel" destination="W90-8V-l3z" id="Htd-81-Ua5"/>
                         <outlet property="tabBgImage" destination="EqL-bZ-gHG" id="Lfr-wu-53f"/>
                         <outlet property="titleLabel" destination="c6m-pT-nAg" id="L26-8v-CUf"/>
                         <outlet property="userImageFour" destination="v8I-iw-f3p" id="P60-uN-JIj"/>
@@ -457,6 +465,7 @@
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <gestureRecognizers/>
                                         <connections>
                                             <outlet property="statusImageView" destination="Qf5-A1-5Z5" id="nwo-Sq-siU"/>
                                             <outlet property="taskLabel" destination="tP8-ug-Hdk" id="Ied-WF-quR"/>
@@ -575,16 +584,31 @@
                                                     <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </imageView>
-                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUB DETAIL INFORMATION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SJa-aY-EdZ">
-                                                    <rect key="frame" x="72" y="155" width="244" height="21"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="vCH-pK-R1r">
+                                                    <rect key="frame" x="16" y="140" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0kV-xP-PGn">
+                                                    <rect key="frame" x="16" y="104" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="qgg-OY-WZH">
+                                                    <rect key="frame" x="16" y="68" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUB DETAIL INFORMATION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SJa-aY-EdZ">
+                                                    <rect key="frame" x="60" y="155" width="244" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gqE-pc-4qO">
-                                                    <rect key="frame" x="72" y="90" width="244" height="57"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gqE-pc-4qO">
+                                                    <rect key="frame" x="60" y="112" width="244" height="47"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
@@ -597,6 +621,9 @@
                                         <animations/>
                                         <connections>
                                             <outlet property="homeListCellBackgroundImageView" destination="DPh-ZX-Rmh" id="9cp-dR-af9"/>
+                                            <outlet property="homeListCellMember1ImageView" destination="vCH-pK-R1r" id="UXX-P6-l4P"/>
+                                            <outlet property="homeListCellMember2ImageView" destination="0kV-xP-PGn" id="BH1-dS-ZeK"/>
+                                            <outlet property="homeListCellMember3ImageView" destination="qgg-OY-WZH" id="SqR-Su-3uN"/>
                                             <outlet property="homeListCellSubTitleLabel" destination="SJa-aY-EdZ" id="AVa-Eg-cbX"/>
                                             <outlet property="homeListCellTitleLabel" destination="gqE-pc-4qO" id="Sxm-Sb-xKt"/>
                                             <segue destination="LpE-YD-dgH" kind="push" id="U98-1f-uZF"/>
