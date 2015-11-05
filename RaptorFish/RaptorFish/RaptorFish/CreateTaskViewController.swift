@@ -316,7 +316,7 @@ class CreateTaskViewController: UIViewController{
             if let label = detailListViewController.titleLabel{
                 label.text = self.titleLabel
             }
-            detailListViewController.titleLabel.text = self.listTitle
+//            detailListViewController.titleLabel.text = self.listTitle
 
             
         } else {}
