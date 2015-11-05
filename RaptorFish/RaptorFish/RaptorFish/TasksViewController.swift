@@ -19,18 +19,18 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
  
         
-        self.tasksTableView.contentOffset = CGPointMake(0,50);
+        self.tasksTableView.contentOffset = CGPointMake(0,45);
         
         tasksTableView.delegate = self
         tasksTableView.dataSource = self
         
         
                 tasks = [
-                    [ "title" : "The Martian",
+                    [ "title" : "List Item One",
                     ],
-                    [ "title" : "The Martian",
+                    [ "title" : "List Item Two",
                     ],
-                    [ "title" : "The Martian",
+                    [ "title" : "List Item Three",
                     ],
                 
                 ]
