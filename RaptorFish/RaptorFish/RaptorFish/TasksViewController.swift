@@ -8,12 +8,34 @@
 
 import UIKit
 
-class TasksViewController: UIViewController {
+class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-
+    @IBOutlet weak var tasksTableView: UITableView!
+    
+    var tasks: [NSDictionary]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+ 
+        
+        self.tasksTableView.contentOffset = CGPointMake(0,50);
+        
+        tasksTableView.delegate = self
+        tasksTableView.dataSource = self
+        
+        
+                tasks = [
+                    [ "title" : "The Martian",
+                    ],
+                    [ "title" : "The Martian",
+                    ],
+                    [ "title" : "The Martian",
+                    ],
+                
+                ]
+    
+
 
         // Do any additional setup after loading the view.
     }
@@ -23,7 +45,26 @@ class TasksViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tasks.count
+    }
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tasksTableView.dequeueReusableCellWithIdentifier("taskCell") as! TasksTableViewCell
+        
+        let task = tasks[indexPath.row]
+        
+        cell.taskLabel.text = task["title"] as? String
+        
+        return cell
+    }
+    
 
+    
+    
     /*
     // MARK: - Navigation
 
