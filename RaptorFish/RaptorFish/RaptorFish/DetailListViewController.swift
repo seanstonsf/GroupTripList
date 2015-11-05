@@ -12,6 +12,10 @@ import UIKit
 
 class DetailListViewController: UIViewController {
     
+    @IBOutlet weak var userImageOne: UIImageView!
+    @IBOutlet weak var userImageTwo: UIImageView!
+    @IBOutlet weak var userImageThree: UIImageView!
+    @IBOutlet weak var userImageFour: UIImageView!
     @IBOutlet weak var tabBgImage: UIView!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet var tabButtons: [UIButton]!
@@ -24,10 +28,21 @@ class DetailListViewController: UIViewController {
     var viewControllers: [UIViewController]!
     var selectedIndex: Int = 0
     
-    var list: NSDictionary!
+    var list: NSDictionary! {
+        get {
+            let selectedItem = AppDelegate.shareAppDelegate().selectedListItem
+            let list = AppDelegate.shareAppDelegate().lists[selectedItem!]
+            return list
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        userImageOne.layer.cornerRadius = userImageOne.frame.size.width / 2
+        userImageTwo.layer.cornerRadius = userImageTwo.frame.size.width / 2
+        userImageThree.layer.cornerRadius = userImageThree.frame.size.width / 2
+        userImageFour.layer.cornerRadius = userImageFour.frame.size.width / 2
         
         tabBgImage.alpha = 0.5
         
