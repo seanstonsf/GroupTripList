@@ -47,6 +47,7 @@ class DetailListViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         titleLabel.text = list["title"] as? String
+//                titleLabel.text = self.titleLabel.text
     }
 
     override func didReceiveMemoryWarning() {
