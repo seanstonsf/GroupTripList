@@ -9,9 +9,22 @@
 import UIKit
 
 class CreateListViewController: UIViewController {
+    
+    
 
+    @IBOutlet weak var checkImageView: UIImageView!
+    @IBOutlet weak var xImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       checkImageView.image = checkImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        
+        checkImageView.tintColor = UIColor.whiteColor()
+        
+        xImageView.image = xImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        
+        xImageView.tintColor = UIColor.whiteColor()
 
         // Do any additional setup after loading the view.
         
