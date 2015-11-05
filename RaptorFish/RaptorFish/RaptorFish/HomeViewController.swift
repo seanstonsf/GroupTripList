@@ -19,7 +19,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var headerProfileImageView: UIImageView!
     @IBOutlet weak var homeListTableView: UITableView!
     
-    var lists: [NSDictionary]!
+    var lists: [NSDictionary]! {
+        get { return AppDelegate.shareAppDelegate().lists }
+    }
 
     var createTaskOrigin: CGPoint!
     var createTemplateOrigin: CGPoint!
@@ -47,26 +49,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         homeListTableView.delegate = self
         homeListTableView.dataSource = self
 
-//        lists = []
-        
-        lists = [
-            [ "title" : "The Martian",
-              
-                "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
-
-            ],
-            [ "title" : "The Martian",
-             "synopsis" : "sdf",
-                "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
-
-            ],
-            [ "title" : "The Martian",
-                "synopsis" : "sdf",
-                "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
-
-            ],
-        
-        ]
         
 //        let url = NSURL(string: "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=dagqdghwaq3e3mxyrp7kmmj5&limit=20&country=us")!
 //        let request = NSURLRequest(URL: url)
@@ -126,7 +108,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             print("Details")
             let detailListViewController = segue.destinationViewController as! DetailListViewController
             
-            detailListViewController.list = lists[indexPath.row]
+            AppDelegate.shareAppDelegate().selectedListItem = indexPath.row
+            
+//            detailListViewController.list = lists[indexPath.row]
+            
             
         } else {}
     }
