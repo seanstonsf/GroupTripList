@@ -13,7 +13,7 @@ import AFNetworking
 class TemplateViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var templateTableView: UITableView!
-    @IBOutlet weak var templateScrollView: UIScrollView!
+//    @IBOutlet weak var templateScrollView: UIScrollView!
     @IBOutlet weak var templateImageView: UIImageView!
     
     var templates: [NSDictionary]!
@@ -22,7 +22,7 @@ class TemplateViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        templateScrollView.contentSize.height = templateImageView.frame.height
+//        templateScrollView.contentSize.height = templateImageView.frame.height
         
         templateTableView.delegate = self
         templateTableView.dataSource = self
