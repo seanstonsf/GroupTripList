@@ -49,13 +49,15 @@ class CreateTaskViewController: UIViewController{
     @IBOutlet weak var memberThirdLabel: UILabel!
     
     
-    var lists: [NSDictionary]!
+    var members: [NSDictionary]!
+    
+    var titleLabel: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         taskScrollView.contentSize.height = itemInfoContainerView.frame.height + listContainerView.frame.height
 
-        groupMembersContainer.alpha = 1
+        groupMembersContainer.alpha = 0
         listSelectedView.alpha = 0
         addMembersButton.alpha = 0
         buttonOneCheckImageView.alpha = 0
@@ -65,7 +67,9 @@ class CreateTaskViewController: UIViewController{
         buttonFiveCheckImageView.alpha = 0
         buttonSixCheckImageView.alpha = 0
         
-        lists = [
+        titleLabel = ""
+        
+        members = [
             [ "memberName" : "Tim",
                 "memberImage" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
                 
@@ -101,7 +105,9 @@ class CreateTaskViewController: UIViewController{
     }
     
     @IBAction func newItemCloseButtonPress(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+//        dismissViewControllerAnimated(true, completion: nil)
+        navigationController?.popViewControllerAnimated(true)
+
     }
     
     @IBAction func buttonOnePressed(sender: AnyObject) {
@@ -134,7 +140,6 @@ class CreateTaskViewController: UIViewController{
                 self.membersFirstView.alpha = 1
                 self.membersSecondView.alpha = 1
                 self.membersThirdView.alpha = 1
-
             })
         }
     }
@@ -151,11 +156,13 @@ class CreateTaskViewController: UIViewController{
                 
                 self.listSelectedView.alpha = 1
                 self.membersFirstImageView.image = UIImage(named: "imgProfile_randy")
-                self.membersFirstLabel.text = String("Randy Makp")
+                self.membersFirstLabel.text = String("Randy Mako")
                 self.membersSecondImageView.image = UIImage(named: "imgProfile_lin")
                 self.memberSecondLabel.text = String("Lin Wang")
                 self.membersThirdImageView.image = UIImage(named: "imgProfile_sean")
                 self.memberThirdLabel.text = String("Sean Smith")
+                
+                self.titleLabel = "Thanksgiving Dinner"
             })
         } else {
             UIView.animateWithDuration(0.2, animations: { () -> Void in
@@ -296,15 +303,36 @@ class CreateTaskViewController: UIViewController{
             })
         }
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        let next_view = segue.destinationViewController
+        
+        if(next_view is DetailListViewController){
+//            listLabel = self.listTitle.text
+            print("Title")
+            
+            print(titleLabel)
+            let detailListViewController = segue.destinationViewController as! DetailListViewController
+            if let label = detailListViewController.titleLabel{
+                label.text = self.titleLabel
+            }
+            detailListViewController.titleLabel.text = self.listTitle
 
+            
+        } else {}
+    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        let next_view = segue.destinationViewController
+//        
+//        if(next_view is DetailListViewController){
+//            let cell = sender as! UITableViewCell
+//            let indexPath = homeListTableView.indexPathForCell(cell)!
+//            print("Details")
+//            let detailListViewController = segue.destinationViewController as! DetailListViewController
+//            
+//            detailListViewController.list = lists[indexPath.row]
+//            
+//        } else {}
+//    }
 
 }
