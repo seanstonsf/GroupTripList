@@ -46,7 +46,7 @@ class DetailListViewController: UIViewController {
 //        detailScrollImageView.frame.origin = detailScrollImageView.frame.offsetBy(dx: 0, dy: -60)
         // Do any additional setup after loading the view.
         
-        titleLabel.text = list["title"] as? String
+//        titleLabel.text = list["title"] as? String
     }
 
     override func didReceiveMemoryWarning() {

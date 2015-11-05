@@ -47,28 +47,34 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         homeListTableView.delegate = self
         homeListTableView.dataSource = self
 
-        lists = []
+//        lists = []
         
-//        lists = [
-//            [ "title" : "The Martian",
-//              "synopsis" : "sdf",
-//            ],
-//            [ "title" : "The Martian",
-//             "synopsis" : "sdf",
-//            ],
-//            [ "title" : "The Martian",
-//                "synopsis" : "sdf",
-//            ],
-//        
-//        ]
+        lists = [
+            [ "title" : "The Martian",
+              
+                "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
+
+            ],
+            [ "title" : "The Martian",
+             "synopsis" : "sdf",
+                "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
+
+            ],
+            [ "title" : "The Martian",
+                "synopsis" : "sdf",
+                "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
+
+            ],
         
-        let url = NSURL(string: "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=dagqdghwaq3e3mxyrp7kmmj5&limit=20&country=us")!
-        let request = NSURLRequest(URL: url)
-        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
-            let json = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
-            self.lists = json["movies"] as! [NSDictionary]
-            self.homeListTableView.reloadData()
-        }
+        ]
+        
+//        let url = NSURL(string: "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=dagqdghwaq3e3mxyrp7kmmj5&limit=20&country=us")!
+//        let request = NSURLRequest(URL: url)
+//        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
+//            let json = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
+//            self.lists = json["movies"] as! [NSDictionary]
+//            self.homeListTableView.reloadData()
+//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -88,7 +94,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let list = lists[indexPath.row]
         cell.homeListCellTitleLabel.text = list["title"] as? String
         cell.homeListCellSubTitleLabel.text = list["synopsis"] as? String
-        let urlString = list.valueForKeyPath("posters.original") as! String
+        let urlString = list.valueForKeyPath("posters") as! String
         let url = NSURL(string: urlString)!
         cell.homeListCellBackgroundImageView.setImageWithURL(url)
         return cell
@@ -107,20 +113,21 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.createTaskButton.frame.origin = self.createTaskDestination
             self.createTemplateButton.frame.origin = self.createTemplateDestination
             self.createListButton.frame.origin = self.createListDestination
-//            self.createTemplateButton.transform = CGAffineTransformMakeRotation((-30 * CGFloat(M_PI)) / 180.0)
-
-//            self.addButton.transform = CGAffineTransformMakeRotation((-45 * CGFloat(M_PI)) / 180.0)
-
             }, completion: nil)
         
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let cell = sender as! UITableViewCell
-        let indexPath = homeListTableView.indexPathForCell(cell)!
+        let next_view = segue.destinationViewController
         
-        let detailListViewController = segue.destinationViewController as! DetailListViewController
-        
-        detailListViewController.list = lists[indexPath.row]
+        if(next_view is DetailListViewController){
+            let cell = sender as! UITableViewCell
+            let indexPath = homeListTableView.indexPathForCell(cell)!
+            print("Details")
+            let detailListViewController = segue.destinationViewController as! DetailListViewController
+            
+            detailListViewController.list = lists[indexPath.row]
+            
+        } else {}
     }
 }
