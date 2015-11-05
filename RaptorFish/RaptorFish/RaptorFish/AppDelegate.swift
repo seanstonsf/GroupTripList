@@ -14,6 +14,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
+    
+    var lists = [
+    [ "title" : "The Martian",
+    
+    "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
+    
+    "task" : ["List1", "List2", "List3"],
+    
+    ],
+    [ "title" : "Alien",
+    "synopsis" : "sdf",
+    "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
+    "task" : ["Alien1", "Alien2", "Alien3", "Alien4"],
+    
+    ],
+    [ "title" : "Terminator",
+    "synopsis" : "sdf",
+    "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
+    "task" : ["Terminator1", "Terminator2"],
+        
+    
+    ],
+    ]
+    
+    var selectedListItem: Int? = nil
+
+    
+    
+    static func shareAppDelegate() -> AppDelegate {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        return appDelegate
+    }
+    
+    
+    
+
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return true

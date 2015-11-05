@@ -28,7 +28,13 @@ class DetailListViewController: UIViewController {
     var viewControllers: [UIViewController]!
     var selectedIndex: Int = 0
     
-    var list: NSDictionary!
+    var list: NSDictionary! {
+        get {
+            let selectedItem = AppDelegate.shareAppDelegate().selectedListItem
+            let list = AppDelegate.shareAppDelegate().lists[selectedItem!]
+            return list
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

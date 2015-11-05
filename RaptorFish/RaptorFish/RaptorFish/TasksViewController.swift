@@ -12,7 +12,21 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     @IBOutlet weak var tasksTableView: UITableView!
     
-    var tasks: [NSDictionary]!
+    var task: [String] {
+        get {
+            let selectedItem = AppDelegate.shareAppDelegate().selectedListItem
+            let list = AppDelegate.shareAppDelegate().lists[selectedItem!]
+            let task = list["task"]
+            return task as! [String]
+        }
+    }
+    
+//    var item: NSDictionary {
+//        get {
+//            let selectedListItem = AppDelegate.shareAppDelegate().selectedListItem
+//            return AppDelegate.shareAppDelegate().lists[selectedListItem!]
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,18 +39,7 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tasksTableView.dataSource = self
         
         
-                tasks = [
-                    [ "title" : "List Item One",
-                    ],
-                    [ "title" : "List Item Two",
-                    ],
-                    [ "title" : "List Item Three",
-                    ],
-                
-                ]
     
-
-
         // Do any additional setup after loading the view.
     }
 
@@ -46,7 +49,7 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tasks.count
+        return task.count
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -55,9 +58,9 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tasksTableView.dequeueReusableCellWithIdentifier("taskCell") as! TasksTableViewCell
         
-        let task = tasks[indexPath.row]
+        let item = task[indexPath.row]
         
-        cell.taskLabel.text = task["title"] as? String
+        cell.taskLabel.text = item // task["task"] as? String
         
         return cell
     }
