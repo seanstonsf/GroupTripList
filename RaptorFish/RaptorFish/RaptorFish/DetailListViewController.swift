@@ -12,6 +12,7 @@ import UIKit
 
 class DetailListViewController: UIViewController {
     
+    @IBOutlet weak var headderImage: UIImageView!
     @IBOutlet weak var subLabel: UILabel!
     @IBOutlet weak var userImageOne: UIImageView!
     @IBOutlet weak var userImageTwo: UIImageView!
@@ -21,6 +22,7 @@ class DetailListViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet var tabButtons: [UIButton]!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titalImageDark: UIView!
     
     var taskViewController: UIViewController!
     var activityViewController: UIViewController!
@@ -44,6 +46,7 @@ class DetailListViewController: UIViewController {
         userImageFour.layer.cornerRadius = userImageFour.frame.size.width / 2
         
         tabBgImage.alpha = 0.5
+        titalImageDark.alpha = 0.3
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -79,6 +82,11 @@ class DetailListViewController: UIViewController {
         let urlString4 = list.valueForKeyPath("profileImage3") as! String
         let url4 = NSURL(string: urlString4)!
         userImageThree.setImageWithURL(url4)
+        
+        let urlString5 = list.valueForKeyPath("posters") as! String
+        let url5 = NSURL(string: urlString5)!
+        headderImage.setImageWithURL(url5)
+    
         
         
         

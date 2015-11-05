@@ -48,6 +48,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         homeListTableView.delegate = self
         homeListTableView.dataSource = self
+        
+        self.homeListTableView.contentOffset = CGPointMake(0,192);
 
             }
 
@@ -111,6 +113,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.createTaskButton.frame.origin = self.createTaskOrigin
             self.createTemplateButton.frame.origin = self.createTemplateOrigin
             self.createListButton.frame.origin = self.createListOrigin
+            //Brings the image back ... 
+            self.homeListTableView.contentOffset = CGPointMake(0,0);
+            
         }
     }
     @IBAction func addButtonPress(sender: AnyObject){
