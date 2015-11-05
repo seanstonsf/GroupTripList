@@ -12,6 +12,7 @@ import UIKit
 
 class DetailListViewController: UIViewController {
     
+    @IBOutlet weak var subLabel: UILabel!
     @IBOutlet weak var userImageOne: UIImageView!
     @IBOutlet weak var userImageTwo: UIImageView!
     @IBOutlet weak var userImageThree: UIImageView!
@@ -19,8 +20,6 @@ class DetailListViewController: UIViewController {
     @IBOutlet weak var tabBgImage: UIView!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet var tabButtons: [UIButton]!
-    
-    
     @IBOutlet weak var titleLabel: UILabel!
     
     var taskViewController: UIViewController!
@@ -62,6 +61,27 @@ class DetailListViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         titleLabel.text = list["title"] as? String
+        
+        subLabel.text = list["sub"] as? String
+        
+        let urlString = list.valueForKeyPath("profileImage") as! String
+        let url = NSURL(string: urlString)!
+        userImageOne.setImageWithURL(url)
+        
+        let urlString2 = list.valueForKeyPath("profileImage2") as! String
+        let url2 = NSURL(string: urlString2)!
+        userImageTwo.setImageWithURL(url2)
+        
+        let urlString3 = list.valueForKeyPath("profileImage3") as! String
+        let url3 = NSURL(string: urlString3)!
+        userImageThree.setImageWithURL(url3)
+        
+        let urlString4 = list.valueForKeyPath("profileImage3") as! String
+        let url4 = NSURL(string: urlString4)!
+        userImageThree.setImageWithURL(url4)
+        
+        
+        
 //                titleLabel.text = self.titleLabel.text
     }
 

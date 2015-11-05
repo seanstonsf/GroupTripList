@@ -75,10 +75,26 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = homeListTableView.dequeueReusableCellWithIdentifier("homeListCell") as! HomeListTableViewCell
         let list = lists[indexPath.row]
         cell.homeListCellTitleLabel.text = list["title"] as? String
-        cell.homeListCellSubTitleLabel.text = list["synopsis"] as? String
+        cell.homeListCellSubTitleLabel.text = list["sub"] as? String
+        
         let urlString = list.valueForKeyPath("posters") as! String
         let url = NSURL(string: urlString)!
         cell.homeListCellBackgroundImageView.setImageWithURL(url)
+        
+        let urlString1 = list.valueForKeyPath("profileImage") as! String
+        let url1 = NSURL(string: urlString1)!
+        cell.homeListCellMember1ImageView.setImageWithURL(url1)
+        
+        let urlString2 = list.valueForKeyPath("profileImage2") as! String
+        let url2 = NSURL(string: urlString2)!
+        cell.homeListCellMember2ImageView.setImageWithURL(url2)
+        
+        let urlString3 = list.valueForKeyPath("profileImage3") as! String
+        let url3 = NSURL(string: urlString3)!
+        cell.homeListCellMember3ImageView.setImageWithURL(url3)
+
+        
+ 
         return cell
     }
     

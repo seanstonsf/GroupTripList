@@ -7,35 +7,40 @@
 //
 
 import UIKit
+import AFNetworking
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
     
     var lists = [
-    [ "title" : "The Martian",
-    
-    "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
-    
-    "task" : ["List1", "List2", "List3"],
-    
-    ],
-    [ "title" : "Alien",
-    "synopsis" : "sdf",
-    "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
-    "task" : ["Alien1", "Alien2", "Alien3", "Alien4"],
-    
-    ],
-    [ "title" : "Terminator",
-    "synopsis" : "sdf",
-    "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
-    "task" : ["Terminator1", "Terminator2"],
-        
-    
-    ],
+        [ "title" : "Picnic Hawk Hill",
+            "sub" : "November 26th Picnic",
+            "posters" : "http://i.imgur.com/Rxm5hKb.jpg",
+            "task" : ["Basket", "Food", "Blanket","Wine"],
+            "profileImage" : "http://i.imgur.com/HhqW7Ci.jpg",
+            "profileImage2" : "http://i.imgur.com/q7rzDjI.jpg",
+            "profileImage3" :  "",
+            
+        ],
+        [ "title" : "Alien",
+            "sub" : "November 26th Picnic",
+            "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
+            "task" : ["Alien1", "Alien2", "Alien3", "Alien4"],
+            "profileImage" : "http://i.imgur.com/f1wSezD.jpg",
+            "profileImage2" : "http://i.imgur.com/q7rzDjI.jpg",
+            "profileImage3" :  "http://i.imgur.com/HhqW7Ci.jpg",
+        ],
+        [ "title" : "Terminator",
+            "sub" : "November 26th Picnic",
+            "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
+            "task" : ["Terminator1", "Terminator2"],
+            "profileImage" : "http://i.imgur.com/f1wSezD.jpg",
+            "profileImage2" : "http://i.imgur.com/q7rzDjI.jpg",
+            "profileImage3" :  "http://i.imgur.com/HhqW7Ci.jpg",
+            
+        ],
     ]
     
     var selectedListItem: Int? = nil
