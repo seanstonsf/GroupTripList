@@ -62,7 +62,10 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         cell.taskLabel.text = item // task["task"] as? String
         
+        cell.selectionStyle = .None
+        
         return cell
+        
     }
     
 
