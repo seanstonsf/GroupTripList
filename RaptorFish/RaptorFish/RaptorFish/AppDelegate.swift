@@ -16,22 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     var lists = [
-    [ "title" : "The Martian",
+    [ "title" : "Picnic on Hawk Hill",
     
-    "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
+    "posters" : "http://i.imgur.com/JbDhDd2.png",
     
     "task" : ["List1", "List2", "List3"],
     
     ],
-    [ "title" : "Alien",
+    [ "title" : "Thanksgiving!!",
     "synopsis" : "sdf",
-    "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
+    "posters" : "http://i.imgur.com/KsGVtvn.png",
     "task" : ["Alien1", "Alien2", "Alien3", "Alien4"],
     
     ],
-    [ "title" : "Terminator",
+    [ "title" : "Hiking with Friends",
     "synopsis" : "sdf",
-    "posters" : "http://resizing.flixster.com/w1m455J_AaUzi_Aaca2vpL2VymI=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg",
+    "posters" : "http://i.imgur.com/Ea0kgaN.png",
     "task" : ["Terminator1", "Terminator2"],
         
     

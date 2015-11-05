@@ -22,10 +22,10 @@ class HomeListTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        homeListCellMember1ImageView.layer.cornerRadius = homeListCellMember1ImageView.frame.size.width / 2
-        homeListCellMember2ImageView.layer.cornerRadius = homeListCellMember2ImageView.frame.size.width / 2
-        homeListCellMember3ImageView.layer.cornerRadius = homeListCellMember3ImageView.frame.size.width / 2
-        homeListCellLocationImageView.layer.cornerRadius = homeListCellLocationImageView.frame.size.width / 2
+//        homeListCellMember1ImageView.layer.cornerRadius = homeListCellMember1ImageView.frame.size.width / 2
+//        homeListCellMember2ImageView.layer.cornerRadius = homeListCellMember2ImageView.frame.size.width / 2
+//        homeListCellMember3ImageView.layer.cornerRadius = homeListCellMember3ImageView.frame.size.width / 2
+//        homeListCellLocationImageView.layer.cornerRadius = homeListCellLocationImageView.frame.size.width / 2
 
     }
 
