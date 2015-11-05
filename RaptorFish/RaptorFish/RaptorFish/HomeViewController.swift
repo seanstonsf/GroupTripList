@@ -119,7 +119,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let next_view = segue.destinationViewController
-        
+
         if(next_view is DetailListViewController){
             let cell = sender as! UITableViewCell
             let indexPath = homeListTableView.indexPathForCell(cell)!
