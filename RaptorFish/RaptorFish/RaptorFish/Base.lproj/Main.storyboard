@@ -389,6 +389,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUB DETAIL INFORMATION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W90-8V-l3z">
                                 <rect key="frame" x="18" y="91" width="244" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -441,7 +442,7 @@
                                     </connections>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="taskCell" rowHeight="60" id="KsT-2c-H3y" customClass="TasksTableViewCell" customModule="RaptorFish" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="taskCell" rowHeight="60" id="KsT-2c-H3y" customClass="TasksTableViewCell" customModule="RaptorFish" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KsT-2c-H3y" id="hbr-2F-lA8">
@@ -456,7 +457,15 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Qf5-A1-5Z5">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ksi-V8-lvO">
+                                                    <rect key="frame" x="0.0" y="-4" width="378" height="63"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <connections>
+                                                        <action selector="taskCellButtonPressed:" destination="KsT-2c-H3y" eventType="touchUpInside" id="c3N-Wg-NsP"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_check_list" id="Qf5-A1-5Z5">
                                                     <rect key="frame" x="13" y="19" width="20" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
@@ -1525,6 +1534,6 @@
         <image name="template_preview_03" width="375" height="62"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="U98-1f-uZF"/>
+        <segue reference="70g-wl-dHu"/>
     </inferredMetricsTieBreakers>
 </document>
