@@ -626,14 +626,14 @@
                                                     <segue destination="3v5-kR-uiM" kind="push" id="2jS-p7-9PE"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ySk-yG-fIQ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ySk-yG-fIQ">
                                                 <rect key="frame" x="16" y="4" width="40" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TqH-BQ-gzP">
-                                                <rect key="frame" x="64" y="13" width="311" height="21"/>
+                                                <rect key="frame" x="64" y="13" width="234" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
@@ -715,6 +715,7 @@
                         <outlet property="createTaskButton" destination="q8U-mA-5Xq" id="b32-Vw-hZU"/>
                         <outlet property="createTemplateButton" destination="CzF-pV-NBV" id="cDh-bq-CU0"/>
                         <outlet property="headerProfileImageView" destination="ySk-yG-fIQ" id="6vi-bN-oqa"/>
+                        <outlet property="headerUserNameLabel" destination="TqH-BQ-gzP" id="2ss-3O-dJ9"/>
                         <outlet property="homeListTableView" destination="ZDB-f8-HY2" id="iBc-e9-LoM"/>
                     </connections>
                 </viewController>
@@ -811,10 +812,10 @@
                                 <color key="backgroundColor" red="0.32156862749999998" green="0.98431372549999996" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="amM-EO-dIy">
-                                <rect key="frame" x="343" y="28" width="20" height="22"/>
+                                <rect key="frame" x="15" y="28" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <state key="normal" image="icon_close_x"/>
+                                <state key="normal" image="Back_Arrow"/>
                                 <connections>
                                     <action selector="CloseButtonPress:" destination="3v5-kR-uiM" eventType="touchUpInside" id="sYL-uz-xEE"/>
                                     <action selector="closeButtonPress:" destination="54R-Oy-8hx" eventType="touchUpInside" id="b3D-td-AcU"/>
@@ -829,7 +830,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qBf-mM-4po">
-                                <rect key="frame" x="15" y="25" width="57" height="30"/>
+                                <rect key="frame" x="305" y="25" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="tintColor" red="0.32156862749999998" green="0.98431372549999996" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
