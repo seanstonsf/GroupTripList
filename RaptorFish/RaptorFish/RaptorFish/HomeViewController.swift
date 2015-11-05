@@ -18,6 +18,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var headerProfileImageView: UIImageView!
     @IBOutlet weak var homeListTableView: UITableView!
+    @IBOutlet weak var headerUserNameLabel: UILabel!
     
     var lists: [NSDictionary]! {
         get { return AppDelegate.shareAppDelegate().lists }
@@ -40,6 +41,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         createTemplateButton.alpha = 0
         
         headerProfileImageView.layer.cornerRadius = headerProfileImageView.frame.size.width / 2
+        headerProfileImageView.image = UIImage(named: "imgProfile_sean")
+        headerUserNameLabel.text = "Sean Smith"
 
         
         createTaskOrigin = createTaskButton.frame.origin
@@ -67,10 +70,26 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = homeListTableView.dequeueReusableCellWithIdentifier("homeListCell") as! HomeListTableViewCell
         let list = lists[indexPath.row]
         cell.homeListCellTitleLabel.text = list["title"] as? String
-        cell.homeListCellSubTitleLabel.text = list["synopsis"] as? String
+        cell.homeListCellSubTitleLabel.text = list["sub"] as? String
+        
         let urlString = list.valueForKeyPath("posters") as! String
         let url = NSURL(string: urlString)!
         cell.homeListCellBackgroundImageView.setImageWithURL(url)
+        
+        let urlString1 = list.valueForKeyPath("profileImage") as! String
+        let url1 = NSURL(string: urlString1)!
+        cell.homeListCellMember1ImageView.setImageWithURL(url1)
+        
+        let urlString2 = list.valueForKeyPath("profileImage2") as! String
+        let url2 = NSURL(string: urlString2)!
+        cell.homeListCellMember2ImageView.setImageWithURL(url2)
+        
+        let urlString3 = list.valueForKeyPath("profileImage3") as! String
+        let url3 = NSURL(string: urlString3)!
+        cell.homeListCellMember3ImageView.setImageWithURL(url3)
+
+        
+ 
         return cell
     }
     

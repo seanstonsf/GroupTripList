@@ -13,6 +13,11 @@ class TasksTableViewCell: UITableViewCell {
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var statusImageView: UIImageView!
     
+    var originalCenter = CGPoint()
+    var deleteOnDragRelease = false
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,8 +25,11 @@ class TasksTableViewCell: UITableViewCell {
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        
 
         // Configure the view for the selected state
     }
+    
+
 
 }
