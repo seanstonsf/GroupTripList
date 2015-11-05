@@ -10,7 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
     
-    var fadeTransition: Some3DTransition!
+    var fadeTransition: FadeTransition!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +35,11 @@ class LoginViewController: UIViewController, UIViewControllerTransitioningDelega
         
         let destinationViewController = segue.destinationViewController
         
-        fadeTransition = Some3DTransition()
+        fadeTransition = FadeTransition()
         destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
         destinationViewController.transitioningDelegate = fadeTransition
         
-        fadeTransition.duration = 0.8
+        fadeTransition.duration = 0.3
         
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.

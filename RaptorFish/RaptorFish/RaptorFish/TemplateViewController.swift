@@ -10,13 +10,14 @@ import UIKit
 import AFNetworking
 
 
-class TemplateViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TemplateViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var templateTableView: UITableView!
 //    @IBOutlet weak var templateScrollView: UIScrollView!
     @IBOutlet weak var templateImageView: UIImageView!
     
     var templates: [NSDictionary]!
+    var lightBoxTransition: LightBoxTransition!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,8 @@ class TemplateViewController: UIViewController, UITableViewDelegate, UITableView
         
         templateTableView.delegate = self
         templateTableView.dataSource = self
+        
+        navigationController?.delegate = self
         
         templates = []
         
@@ -79,19 +82,20 @@ class TemplateViewController: UIViewController, UITableViewDelegate, UITableView
             true, completion: nil)
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        let next_view = segue.destinationViewController
-//        
-//        if(next_view is TemplatePreviewViewController){
-//            let cell = sender as! UITableViewCell
-//            let indexPath = templateTableView.indexPathForCell(cell)!
-//            print("Details")
-//            let templatePreviewViewController = segue.destinationViewController as! TemplatePreviewViewController
-//            
-////            templatePreviewViewController.list = templates[indexPath.row]
-//            
-//        } else {}
-//    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let destinationViewController = segue.destinationViewController
+        
+        lightBoxTransition = LightBoxTransition()
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        destinationViewController.transitioningDelegate = lightBoxTransition
+        
+        lightBoxTransition.duration = 0.5
+        
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
 
     
     
