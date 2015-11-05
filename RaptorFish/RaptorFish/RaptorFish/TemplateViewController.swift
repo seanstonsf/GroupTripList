@@ -17,8 +17,6 @@ class TemplateViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var templateImageView: UIImageView!
     
     var templates: [NSDictionary]!
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,23 +27,33 @@ class TemplateViewController: UIViewController, UITableViewDelegate, UITableView
         
         templates = []
         
-        let url = NSURL(string: "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=dagqdghwaq3e3mxyrp7kmmj5&limit=20&country=us")!
-        let request = NSURLRequest(URL: url)
-        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
+        templates = [
             
-            let json = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
+            [ "address" : "http://i.imgur.com/ha51Zez.png",
+            ], [ "address" : "http://i.imgur.com/rHLzmc9.png",
             
-//            print(json)
-            self.templates = json["movies"] as! [NSDictionary]
+            ], [ "address" : "http://i.imgur.com/LvqPCBR.png",
+                
+            ], [ "address" : "http://i.imgur.com/b81O8d2.png",
+                
+            ], [ "address" : "http://i.imgur.com/LvqPCBR.png",
+                
+            ], [ "address" : "http://i.imgur.com/ch4RWEB.png",
+                
+            ], [ "address" : "http://i.imgur.com/mUi9Tes.png",
+                
+            ], [ "address" : "http://i.imgur.com/uATlae9.png",
+                
+            ], [ "address" : "http://i.imgur.com/wI7zkub.png",
+                
+            ], [ "address" : "http://i.imgur.com/LvqPCBR.png",
+                
+            ],
             
+        ]
             self.templateTableView.reloadData()
-        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return templates.count
@@ -58,11 +66,7 @@ class TemplateViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = templateTableView.dequeueReusableCellWithIdentifier("templatePreviewCell") as! TemplatePreviewTableViewCell
         
         let template = templates[indexPath.row]
-        
-        cell.previewTitleLabel.text = template["title"] as? String
-        cell.previewAuthorNameLabel.text = template["synopsis"] as? String
-        
-        let urlString = template.valueForKeyPath("posters.original") as! String
+        let urlString = template.valueForKeyPath("address") as! String
         let url = NSURL(string: urlString)!
         cell.previewBackgroundImageView.setImageWithURL(url)
         
@@ -74,4 +78,21 @@ class TemplateViewController: UIViewController, UITableViewDelegate, UITableView
         dismissViewControllerAnimated(
             true, completion: nil)
     }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        let next_view = segue.destinationViewController
+//        
+//        if(next_view is TemplatePreviewViewController){
+//            let cell = sender as! UITableViewCell
+//            let indexPath = templateTableView.indexPathForCell(cell)!
+//            print("Details")
+//            let templatePreviewViewController = segue.destinationViewController as! TemplatePreviewViewController
+//            
+////            templatePreviewViewController.list = templates[indexPath.row]
+//            
+//        } else {}
+//    }
+
+    
+    
 }

@@ -27,9 +27,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var createTemplateOrigin: CGPoint!
     var createListOrigin: CGPoint!
     
-    var createTaskDestination = CGPoint(x: 192, y: 104)
-    var createTemplateDestination = CGPoint(x: 106, y: 20)
-    var createListDestination = CGPoint(x: 20, y: 104)
+    var createTaskDestination = CGPoint(x: 256, y: 615)
+    var createTemplateDestination = CGPoint(x: 168, y: 525)
+    var createListDestination = CGPoint(x: 88, y: 615)
     
     var bgColor = UIColor(red:0.95, green:0.95, blue:0.95, alpha:1)
     
@@ -49,15 +49,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         homeListTableView.delegate = self
         homeListTableView.dataSource = self
 
-        
-//        let url = NSURL(string: "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=dagqdghwaq3e3mxyrp7kmmj5&limit=20&country=us")!
-//        let request = NSURLRequest(URL: url)
-//        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
-//            let json = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
-//            self.lists = json["movies"] as! [NSDictionary]
-//            self.homeListTableView.reloadData()
-//        }
-    }
+            }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -100,19 +92,46 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     
-    @IBAction func addButtonPress(sender: AnyObject){
-       
+    @IBAction func onCreateListButtonPress(sender: AnyObject) {
         UIView.animateWithDuration(0.2) { () -> Void in
-            self.createListButton.alpha = 1
-            self.createTaskButton.alpha = 1
-            self.createTemplateButton.alpha = 1
+            self.createTaskButton.frame.origin = self.createTaskOrigin
+            self.createTemplateButton.frame.origin = self.createTemplateOrigin
+            self.createListButton.frame.origin = self.createListOrigin
         }
-        UIView.animateWithDuration(0.5, delay: 0.1, usingSpringWithDamping: CGFloat(0.5), initialSpringVelocity: CGFloat(2.0), options: UIViewAnimationOptions.CurveEaseInOut , animations: { () -> Void in
-            self.createTaskButton.frame.origin = self.createTaskDestination
-            self.createTemplateButton.frame.origin = self.createTemplateDestination
-            self.createListButton.frame.origin = self.createListDestination
-            }, completion: nil)
-        
+    }
+    @IBAction func onCreateTaskButtonPress(sender: AnyObject) {
+        UIView.animateWithDuration(0.2) { () -> Void in
+            self.createTaskButton.frame.origin = self.createTaskOrigin
+            self.createTemplateButton.frame.origin = self.createTemplateOrigin
+            self.createListButton.frame.origin = self.createListOrigin
+        }
+    }
+    @IBAction func onTemplateButtonPress(sender: AnyObject) {
+        UIView.animateWithDuration(0.2) { () -> Void in
+            self.createTaskButton.frame.origin = self.createTaskOrigin
+            self.createTemplateButton.frame.origin = self.createTemplateOrigin
+            self.createListButton.frame.origin = self.createListOrigin
+        }
+    }
+    @IBAction func addButtonPress(sender: AnyObject){
+        if createTaskButton.frame.origin == createTaskOrigin {
+            UIView.animateWithDuration(0.2) { () -> Void in
+                self.createListButton.alpha = 1
+                self.createTaskButton.alpha = 1
+                self.createTemplateButton.alpha = 1
+            }
+            UIView.animateWithDuration(0.5, delay: 0.1, usingSpringWithDamping: CGFloat(0.5), initialSpringVelocity: CGFloat(2.0), options: UIViewAnimationOptions.CurveEaseInOut , animations: { () -> Void in
+                self.createTaskButton.frame.origin = self.createTaskDestination
+                self.createTemplateButton.frame.origin = self.createTemplateDestination
+                self.createListButton.frame.origin = self.createListDestination
+                }, completion: nil)
+        } else {
+            UIView.animateWithDuration(0.2) { () -> Void in
+                self.createTaskButton.frame.origin = self.createTaskOrigin
+                self.createTemplateButton.frame.origin = self.createTemplateOrigin
+                self.createListButton.frame.origin = self.createListOrigin
+            }
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -122,7 +141,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             let cell = sender as! UITableViewCell
             let indexPath = homeListTableView.indexPathForCell(cell)!
             print("Details")
-            let detailListViewController = segue.destinationViewController as! DetailListViewController
+//            let detailListViewController = segue.destinationViewController as! DetailListViewController
             
             AppDelegate.shareAppDelegate().selectedListItem = indexPath.row
             

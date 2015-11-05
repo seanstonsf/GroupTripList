@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     var lists = [
+
         [ "title" : "Picnic Hawk Hill",
             "sub" : "November 26th Picnic",
             "posters" : "http://i.imgur.com/Rxm5hKb.jpg",
