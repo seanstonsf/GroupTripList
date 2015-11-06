@@ -11,9 +11,7 @@ import UIKit
 class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tasksTableView: UITableView!
-
     var checked = [Bool]() // Have an array equal to the number of cells in your table
-
     var task: [String] {
         get {
             let selectedItem = AppDelegate.shareAppDelegate().selectedListItem
