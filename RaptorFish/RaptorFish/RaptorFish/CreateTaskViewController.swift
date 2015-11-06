@@ -65,6 +65,9 @@ class CreateTaskViewController: UIViewController{
         groupMembersContainer.alpha = 0
         listSelectedView.alpha = 0
         addMembersButton.alpha = 0
+//        membersFirstView.alpha = 0
+//        membersSecondView.alpha = 0
+//        membersThirdView.alpha = 0
         buttonOneCheckImageView.alpha = 0
         buttonTwoCheckImageView.alpha = 0
         buttonThreeCheckImageView.alpha = 0
@@ -108,7 +111,7 @@ class CreateTaskViewController: UIViewController{
     @IBAction func buttonOnePressed(sender: AnyObject) {
         if buttonOneCheckImageView.alpha == 0 {
             UIView.animateWithDuration(0.2, animations: { () -> Void in
-                self.buttonOneCheckImageView.alpha = 1
+                self.buttonOneCheckImageView.alpha = 0
                 self.buttonTwoCheckImageView.alpha = 0
                 self.buttonThreeCheckImageView.alpha = 0
                 self.buttonFourCheckImageView.alpha = 0
@@ -150,12 +153,17 @@ class CreateTaskViewController: UIViewController{
                 self.buttonSixCheckImageView.alpha = 0
                 
                 self.listSelectedView.alpha = 1
+                
                 self.membersFirstImageView.image = UIImage(named: "imgProfile_randy")
                 self.membersFirstLabel.text = String("Randy Mako")
                 self.membersSecondImageView.image = UIImage(named: "imgProfile_lin")
                 self.memberSecondLabel.text = String("Lin Wang")
                 self.membersThirdImageView.image = UIImage(named: "imgProfile_sean")
                 self.memberThirdLabel.text = String("Sean Smith")
+                self.addMembersButton.alpha = 0
+                self.membersFirstView.alpha = 1
+                self.membersSecondView.alpha = 1
+                self.membersThirdView.alpha = 1
                 
                 self.titleLabel = "Thanksgiving Dinner"
             })
@@ -189,6 +197,11 @@ class CreateTaskViewController: UIViewController{
                 self.memberSecondLabel.text = String("Emily Hoover")
                 self.membersThirdImageView.image = UIImage(named: "10")
                 self.memberThirdLabel.text = String("Joe Finnigan")
+                self.addMembersButton.alpha = 0
+                self.membersFirstView.alpha = 1
+                self.membersSecondView.alpha = 1
+                self.membersThirdView.alpha = 1
+
                 
             })
         } else {
@@ -221,6 +234,11 @@ class CreateTaskViewController: UIViewController{
                 self.memberSecondLabel.text = String("Jason Flores")
                 self.membersThirdImageView.image = UIImage(named: "11")
                 self.memberThirdLabel.text = String("Nicholas Howard")
+                self.addMembersButton.alpha = 0
+                self.membersFirstView.alpha = 1
+                self.membersSecondView.alpha = 1
+                self.membersThirdView.alpha = 1
+
 
             })
         } else {
@@ -253,6 +271,11 @@ class CreateTaskViewController: UIViewController{
                 self.memberSecondLabel.text = String("Walter Burns  ")
                 self.membersThirdImageView.image = UIImage(named: "11")
                 self.memberThirdLabel.text = String("Nicholas Howard")
+                self.addMembersButton.alpha = 0
+                self.membersFirstView.alpha = 1
+                self.membersSecondView.alpha = 1
+                self.membersThirdView.alpha = 1
+
 
             })
         } else {
@@ -284,6 +307,11 @@ class CreateTaskViewController: UIViewController{
                 self.memberSecondLabel.text = String("Christina Davis")
                 self.membersThirdImageView.image = UIImage(named: "03")
                 self.memberThirdLabel.text = String("Rose Harris")
+                self.addMembersButton.alpha = 0
+                self.membersFirstView.alpha = 1
+                self.membersSecondView.alpha = 1
+                self.membersThirdView.alpha = 1
+
 
             })
         } else {

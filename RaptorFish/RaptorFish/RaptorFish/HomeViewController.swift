@@ -18,6 +18,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var headerProfileImageView: UIImageView!
     @IBOutlet weak var homeListTableView: UITableView!
+    @IBOutlet weak var headerUserNameLabel: UILabel!
     
     var lists: [NSDictionary]! {
         get { return AppDelegate.shareAppDelegate().lists }
@@ -40,6 +41,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         createTemplateButton.alpha = 0
         
         headerProfileImageView.layer.cornerRadius = headerProfileImageView.frame.size.width / 2
+        headerProfileImageView.image = UIImage(named: "imgProfile_sean")
+        headerUserNameLabel.text = "Sean Smith"
 
         
         createTaskOrigin = createTaskButton.frame.origin
